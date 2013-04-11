@@ -20,180 +20,53 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
 	<body>
+		<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+	
+<!-- Content -->
+	
 		<header>
-
 			<h1>Sebastian Joe's Ice Cream</h1>
 			<p class="flavor-subheading">We make it fresh daily. One batch at a time.</p>
+			<div class="menu">
+				<ul>
+					<li><a href="#" data-flavor-set="franklin">Franklin Ave</a></li>
+					<li><a href="#" data-flavor-set="all" class="active">All Flavors</a></li>
+					<li><a href="#" data-flavor-set="linden">Linden Hills</a></li>
+				</ul>
+			</div>
 		</header>	
 
-		<ul></ul>
+		<ul class="flavor-list"></ul>
 
 
-<!-- BEGIN scripts -->
+<!-- Underscore.js Templates -->
 
+		<!-- selected template -->
+		<script id="selected-flavor-template" type="text/html">
+			<li class="flavor-detail">
+				<h1><%= flavor %></h1>
+				<p><b>type:</b> <%= type %></p>
+				<p><%= description %></p>
+			</li>
+		</script>
 
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js" type="text/javascript"></script>
+<!-- Script Includes -->
 
-  <script>
-  //http://codepen.io/bradfrost/full/evwgx
-  //http://twitter.github.com/bootstrap/
-  //http://bradfrost.github.com/this-is-responsive/resources.html
-  //http://hellohappy.org/beautiful-web-type/
-  //http://www.thinkingwithtype.com/contents/letter/#Mixing_Typefaces
-  //http://viljamis.com/blog/2012/typography/
-  //http://sebastianjoesicecream.com/wp-content/uploads/2012/12/flavor_list_20121.pdf
-$(function(){
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js" type="text/javascript"></script>
+        <script src="js/app.js"></script>
 
-var rando = Math.random()*10000000000000000;
-
-/*
-$.ajax('json/flavors.json?rando='+rando).done(function (json) {
-
-//$.get('json/flavors.json?rando='+rando).done(function (data) {
-	console.log('hi', data);
-}).error(function(error){
-	console.log('hi', error);
-});
-
-
-for(var i=1; i<=20; i++){
-	$('ul').append('<li><img class="ring" src="images/ring.png" /><img class="flavor" src="images/flavors/fc-' + i + '.png" /></li>');
-}*/
-
-var flavors;
-var types;
-
-$.ajax({
-	type: 'get',
-	url: 'json/flavors.json?rando='+rando,
-	success: function (data, textStatus, jqXHR) {
-		flavors = data.flavors;
-		types = data.types;
-		console.log(flavors);
-		build();
-
-	},
-	error: function (jqXHR, textStatus, errorThrown) {
-		console.log('hi2', jqXHR, errorThrown);
-	}
-});
-
-
-$('body').on('click', '.js-flavor-trigger', showFlavor);
-$('body').on('mouseover', '.js-flavor-trigger', flavorOver);
-$('body').on('mouseout', '.js-flavor-trigger', flavorOut);
-
-function flavorOver(){
-	$(this).parents('li').addClass('hover');
-}
-
-function flavorOut(){
-	$(this).parents('li').removeClass('hover');
-}
-// http://blog-en.openalfa.com/how-to-read-and-write-json-files-in-php/
-function build(){
-	
-	var flavor;
-	
-	var markup = '';
-	
-	for(i=0; i<flavors.length; i++){
-		flavor = flavors[i];
-		markup += '<li><div class="nameplate-image">';
-		markup += '<a class="js-flavor-trigger" data-flavor-id="' + flavor.id + '" href="#"><img class="nameplate" src="images/nameplates/n-' + Math.ceil(19*Math.random()) + '.jpg" /></a>';
-		markup += '</div>'
-	//	markup += '<div class="flavor-meta"><h2>' + flavor.flavor + '</h2></div>';
-		'</li>';
-
-	}
-	
-	/*
-	for(i=0; i<flavors.length; i++){
-		flavor = flavors[i];
-		markup += '<li><div class="flavor-image">';
-		markup += '<img class="ring" src="images/ring.png" />';
-		markup += '<img class="flavor" src="images/flavors/fc-' + Math.ceil(20*Math.random()) + '.png" />';
-		markup += '</div>'
-		markup += '<div class="flavor-meta"><h2>' + flavor.flavor + '</h2><p>' + flavor.description + '</p></div>';
-		'</li>';
-
-	}*/
-	
-	$('ul').append(markup);
-}
-
-function getTypeById(id){
-	
-	for(var i=0; i<types.length; i++){
-		if(id == types[i].id) return types[i].name;
-	}
-}
-
-function showFlavor(event){
-
-	event.preventDefault();
-	$('.flavor-detail').remove();
-	var template = _.template($('#selected-flavor-template').html());
-	
-	var $target = $(this);
-	$('.selected').removeClass('selected');
-	var $targetLi = $target.parents('li').addClass('selected');
-	var flavorId = $target.attr('data-flavor-id');
-	
-	
-	var index = $('li').index($targetLi) + 1;
-	
-	//console.log(flavorId, index, $targetLi.width(), $('ul').width());
-	
-	var ulWidth = $('ul').width();
-	
-	var liPerRow = Math.floor(ulWidth/280);
-	
-	
-	
-	var $insertAfterMe = $('li').eq((Math.ceil(index/liPerRow) * liPerRow) - 1);
-	if($insertAfterMe.length == 0) $insertAfterMe = $('li').last();
-	
-	var flavor = flavors[flavorId-1];
-	
-	var data = {
-		flavor: flavor.flavor,
-		description: flavor.description,
-		type: getTypeById(flavor.type)
-	}
-	
-	
-	
-	$insertAfterMe.after(template(data));
-	
-	$('.flavor-detail').css({ height: '0px' }).animate({ height: 150 }, 150);
-	
-}
-
-});
-</script>
-
-<!-- selected template -->
-<script id="selected-flavor-template" type="text/html">
-	<li class="flavor-detail">
-		<h1><%= flavor %></h1>
-		<p><b>type:</b> <%= type %></p>
-		<p><%= description %></p>
-	</li>
-</script>
-
-
-
-<!--<div class="category-product-img">
-			<img src="http://target.scene7.com/is/image/Target/<%= product.tcin %>" alt="" />
-		</div>
-		<div class="category-product-meta">
-			<button class="category-product-favorite<% if (isFavorite) { %> is-favorite<% } %>" data-tcin="<%= product.tcin %>">add</button>
-			<div class="category-product-price">$<%= parseFloat(product.p).toFixed(2) %> <span class="label"><%= product.pl %></span></div>
-			<a class="category-product-title" href="http://m.target.com/p/-/A-<%= product.tcin %>"><%= product.t %></a><br/>
-			<div class="category-product-channel"><%= product.pc %></div>
-		</div>-->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
 
   </body>
 </html>
