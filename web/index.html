@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="imagetoolbar" content="no" />
+
+  <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+  <title>SJ</title>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+ 
+  <link href='http://fonts.googleapis.com/css?family=Yellowtail|Parisienne|Yesteryear|Alex+Brush|Norican' rel='stylesheet' type='text/css'>
+  
+  <style>
+  /* #2E2E24 */
+  img { width: 100%; height: 100%; position: absolute; }
+  body {  color: #555; font-family: 'Open Sans', sans-serif;  background:rgb(255, 247, 236); text-align: center; margin: 0; padding: 0; }
+  p { font-family: 'Gentium Book Basic', serif; }
+  ul { list-style-type: none; margin: 0; padding: 0; }
+  li { 
+  	display: block; float: left; width: 220px; height: 140px; overflow: hidden; 
+  	position: relative; 
+  	text-align: left; 
+  	margin: 30px; 
+  	border-radius: 30px;
+  	box-shadow: 2px 2px 10px #999;
+  }
+  
+  li.selected, li.hover { 
+  	margin: 20px;
+  	width: 240px;
+  	height: 160px;
+  }
+  .flavor-image { display: inline-block; width: 50px; height: 50px;  position: relative; text-align: left;  }
+  .nameplate-image { display: block; width: 100%; height: 100%;  position: absolute; text-align: left;  }
+  .flavor-meta { display: block; width: 279px; height: 176px;  position: absolute; text-align: center;  }
+  .ring { z-index: 1; }
+   .flavor-meta p { font-size: .8em; }
+  h1 { font-weight: 400; font-size: 4em;  font-family: 'Norican'; margin: 0; padding: 0; color: rgb(255, 247, 236); }
+  h2 { font-weight: 600; font-size: 1.25em;  }
+  
+  .flavor-subheading { color: rgba(255, 247, 236, .6); font-family: 'Open Sans'; font-size: 1.3em; font-weight: 600; margin: 0; padding: 0; letter-spacing: 0px; }
+  
+ li.flavor-detail {
+ 	width: 100%;
+ 	box-shadow: none;
+ 	background: rgb(255, 235, 208);
+ 	margin: 0;
+ 	border-radius: 0;
+ 	height: 150px;
+ 	box-shadow: inset 1px 1px 10px #999;
+ 	padding: 30px;
+ 	
+ 	
+ 	
+ 	
+ 	background-color: rgb(255, 232, 202);
+	background-image: linear-gradient(45deg, rgb(255, 228, 192) 25%, transparent 25%, transparent 75%, rgb(255, 228, 192) 75%, rgb(255, 228, 192)), 
+		linear-gradient(-45deg, rgb(255, 228, 192) 25%, transparent 25%, transparent 75%, rgb(255, 228, 192) 75%, rgb(255, 228, 192));
+	background-size:100px 100px;
+ }
+  
+  .flavor-detail h1 { color: #37342F; font-size: 2em; font-weight: 600; }
+  .flavor-detail p { margin-left: 0px; }
+  header { background: #37342F; margin: 0; padding: 20px 0 30px 0; }
+  
+  </style>
+
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js" type="text/javascript"></script>
+</head>
+
+  <body>
+
+<header>
+
+<h1>Sebastian Joe's Ice Cream</h1>
+<p class="flavor-subheading">We make it fresh daily. One batch at a time.</p>
+</header>	
+
+<ul></ul>
+
+
+  <script>
+  //http://codepen.io/bradfrost/full/evwgx
+  //http://twitter.github.com/bootstrap/
+  //http://bradfrost.github.com/this-is-responsive/resources.html
+  //http://hellohappy.org/beautiful-web-type/
+  //http://www.thinkingwithtype.com/contents/letter/#Mixing_Typefaces
+  //http://viljamis.com/blog/2012/typography/
+  //http://sebastianjoesicecream.com/wp-content/uploads/2012/12/flavor_list_20121.pdf
+$(function(){
+
+var rando = Math.random()*10000000000000000;
+
+/*
+$.ajax('json/flavors.json?rando='+rando).done(function (json) {
+
+//$.get('json/flavors.json?rando='+rando).done(function (data) {
+	console.log('hi', data);
+}).error(function(error){
+	console.log('hi', error);
+});
+
+
+for(var i=1; i<=20; i++){
+	$('ul').append('<li><img class="ring" src="images/ring.png" /><img class="flavor" src="images/flavors/fc-' + i + '.png" /></li>');
+}*/
+
+var flavors;
+var types;
+
+$.ajax({
+	type: 'get',
+	url: 'json/flavors.json?rando='+rando,
+	success: function (data, textStatus, jqXHR) {
+		flavors = data.flavors;
+		types = data.types;
+		console.log(flavors);
+		build();
+
+	},
+	error: function (jqXHR, textStatus, errorThrown) {
+		console.log('hi2', jqXHR, errorThrown);
+	}
+});
+
+
+$('body').on('click', '.js-flavor-trigger', showFlavor);
+$('body').on('mouseover', '.js-flavor-trigger', flavorOver);
+$('body').on('mouseout', '.js-flavor-trigger', flavorOut);
+
+function flavorOver(){
+	$(this).parents('li').addClass('hover');
+}
+
+function flavorOut(){
+	$(this).parents('li').removeClass('hover');
+}
+// http://blog-en.openalfa.com/how-to-read-and-write-json-files-in-php/
+function build(){
+	
+	var flavor;
+	
+	var markup = '';
+	
+	for(i=0; i<flavors.length; i++){
+		flavor = flavors[i];
+		markup += '<li><div class="nameplate-image">';
+		markup += '<a class="js-flavor-trigger" data-flavor-id="' + flavor.id + '" href="#"><img class="nameplate" src="images/nameplates/n-' + Math.ceil(19*Math.random()) + '.jpg" /></a>';
+		markup += '</div>'
+	//	markup += '<div class="flavor-meta"><h2>' + flavor.flavor + '</h2></div>';
+		'</li>';
+
+	}
+	
+	/*
+	for(i=0; i<flavors.length; i++){
+		flavor = flavors[i];
+		markup += '<li><div class="flavor-image">';
+		markup += '<img class="ring" src="images/ring.png" />';
+		markup += '<img class="flavor" src="images/flavors/fc-' + Math.ceil(20*Math.random()) + '.png" />';
+		markup += '</div>'
+		markup += '<div class="flavor-meta"><h2>' + flavor.flavor + '</h2><p>' + flavor.description + '</p></div>';
+		'</li>';
+
+	}*/
+	
+	$('ul').append(markup);
+}
+
+function getTypeById(id){
+	
+	for(var i=0; i<types.length; i++){
+		if(id == types[i].id) return types[i].name;
+	}
+}
+
+function showFlavor(event){
+
+	event.preventDefault();
+	$('.flavor-detail').remove();
+	var template = _.template($('#selected-flavor-template').html());
+	
+	var $target = $(this);
+	$('.selected').removeClass('selected');
+	var $targetLi = $target.parents('li').addClass('selected');
+	var flavorId = $target.attr('data-flavor-id');
+	
+	
+	var index = $('li').index($targetLi) + 1;
+	
+	//console.log(flavorId, index, $targetLi.width(), $('ul').width());
+	
+	var ulWidth = $('ul').width();
+	
+	var liPerRow = Math.floor(ulWidth/280);
+	
+	
+	
+	var $insertAfterMe = $('li').eq((Math.ceil(index/liPerRow) * liPerRow) - 1);
+	if($insertAfterMe.length == 0) $insertAfterMe = $('li').last();
+	
+	var flavor = flavors[flavorId-1];
+	
+	var data = {
+		flavor: flavor.flavor,
+		description: flavor.description,
+		type: getTypeById(flavor.type)
+	}
+	
+	
+	
+	$insertAfterMe.after(template(data));
+	
+	$('.flavor-detail').css({ height: '0px' }).animate({ height: 150 }, 150);
+	
+}
+
+});
+</script>
+
+<!-- selected template -->
+<script id="selected-flavor-template" type="text/html">
+	<li class="flavor-detail">
+		<h1><%= flavor %></h1>
+		<p><b>type:</b> <%= type %></p>
+		<p><%= description %></p>
+	</li>
+</script>
+
+
+
+<!--<div class="category-product-img">
+			<img src="http://target.scene7.com/is/image/Target/<%= product.tcin %>" alt="" />
+		</div>
+		<div class="category-product-meta">
+			<button class="category-product-favorite<% if (isFavorite) { %> is-favorite<% } %>" data-tcin="<%= product.tcin %>">add</button>
+			<div class="category-product-price">$<%= parseFloat(product.p).toFixed(2) %> <span class="label"><%= product.pl %></span></div>
+			<a class="category-product-title" href="http://m.target.com/p/-/A-<%= product.tcin %>"><%= product.t %></a><br/>
+			<div class="category-product-channel"><%= product.pc %></div>
+		</div>-->
+
+  </body>
+</html>
