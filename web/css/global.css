@@ -29,7 +29,9 @@
   	height: 160px;
   }
   .flavor-image { display: inline-block; width: 50px; height: 50px;  position: relative; text-align: left;  }
-  .nameplate-image { display: block; width: 100%; height: 100%;  position: absolute; text-align: left;  }
+  .nameplate-image { display: block; width: 100%; height: 100%;  position: absolute; text-align: left;  background: #37342F; }
+  .available .nameplate-image { background: rgb(119, 182, 90); }
+  .toggling .nameplate-image { background: rgb(156, 149, 136); }
   .flavor-meta { display: block; width: 100%; height: 100%;  position: absolute; text-align: center; padding: 20px 0 0 0; color: rgb(255, 247, 236); font-family: 'Open Sans'; font-size: 1.1em;}
   .ring { z-index: 1; }
    .flavor-meta p { font-size: .8em; }
@@ -56,7 +58,7 @@
   
   .flavor-detail h1 { color: #37342F; font-size: 2em; font-weight: 600; }
   .flavor-detail p { margin-left: 0px; }
-  header { background: #37342F; margin: 0; padding: 20px 0 0px 0; }
+  header { background: #37342F; margin: 0 0 10px 0; padding: 20px 0 0px 0; }
   
   
 .menu { 
