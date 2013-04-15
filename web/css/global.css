@@ -60,7 +60,7 @@ header {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-  
+
 .flavor-list > .selected,
 .flavor-list > .hover {
 	margin: 20px;
