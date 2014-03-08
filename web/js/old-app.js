@@ -28,11 +28,6 @@ var flavors;
 var types;
 var franklin;
 var linden;
-var currentStore = 'franklin';
-
-var franklinLoad = false,
-	lindenLoad = false,
-	flavorsLoad = false;
 
 $.ajax({
 	type: 'get',
@@ -41,8 +36,7 @@ $.ajax({
 		flavors = data.flavors;
 		types = data.types;
 		console.log(flavors);
-		flavorsLoad = true;
-		checkJSONLoad();
+		build();
 	},
 	error: function (jqXHR, textStatus, errorThrown) {
 		console.log('error', jqXHR, errorThrown);
@@ -55,8 +49,6 @@ $.ajax({
 	success: function (data, textStatus, jqXHR) {
 		linden = data;
 		console.log(linden);
-		lindenLoad = true;
-		checkJSONLoad();
 	},
 	error: function (jqXHR, textStatus, errorThrown) {
 		console.log('error', jqXHR, errorThrown);
@@ -69,85 +61,20 @@ $.ajax({
 	success: function (data, textStatus, jqXHR) {
 		franklin = data;
 		console.log(franklin);
-		franklinLoad = true;
-		checkJSONLoad();
 	},
 	error: function (jqXHR, textStatus, errorThrown) {
 		console.log('error', jqXHR, errorThrown);
 	}
 });
 
-function checkJSONLoad(){
-	if(flavorsLoad && lindenLoad && franklinLoad)
-		build();
-}
-
 $('body').on('click', '.menu a', changeMenu);
-$('body').on('click', '.js-flavor-trigger', toggleFlavorAvailability);
+$('body').on('click', '.js-flavor-trigger', showFlavor);
 $('body').on('mouseover', '.js-flavor-trigger', flavorOver);
 $('body').on('mouseout', '.js-flavor-trigger', flavorOut);
-
-function toggleFlavorAvailability(event){
-	event.preventDefault();
-	
-	var $self = $(this);
-	var $parentLi = $self.parents('li');
-	var isAvailable = $parentLi.hasClass('available');
-	var flavorId = $self.attr('data-flavor-id');
-	console.log(isAvailable, flavorId);
-	
-	if(!isAvailable){
-		$parentLi.addClass('available');
-		addFlavor(flavorId);
-	}
-	else {
-		$parentLi.removeClass('available');
-		removeFlavor(flavorId);
-	}
-}
-
-function addFlavor(flavorId){
-	
-	var data = 'store=' + currentStore + '&flavorId=' + flavorId;
-	console.log('add', data);
-	
-	$.ajax({
-		type: 'post',
-		url: 'admin/add-flavor.php',
-		data: data,
-		dataType: 'text',
-		success: function (data, textStatus, jqXHR) {
-			console.log('post success', data);
-		},
-		error: function (jqXHR, textStatus, errorThrown) {
-			console.log('post error', data);
-		}
-	});
-}
-
-function removeFlavor(flavorId){
-
-	var data = 'store=' + currentStore + '&flavorId=' + flavorId;
-	console.log('remove', data);
-
-	$.ajax({
-		type: 'post',
-		url: 'admin/remove-flavor.php',
-		data: data,
-		dataType: 'text',
-		success: function (data, textStatus, jqXHR) {
-			console.log('post success', data);
-		},
-		error: function (jqXHR, textStatus, errorThrown) {
-			console.log('post error', data);
-		}
-	});
-}
 
 function flavorOver(){
 	$(this).parents('li').addClass('hover');
 }
-
 
 function changeMenu(event){
 	event.preventDefault();
@@ -163,20 +90,25 @@ function changeMenu(event){
 	$('.menu a').removeClass('active');
 	$self.addClass('active');
 	
-	currentStore = flavorSet;
-	
-	build();
+	build(flavorSet);
 }
 
 function flavorOut(){
 	$(this).parents('li').removeClass('hover');
 }
-// http://blog-en.openalfa.com/how-to-read-and-write-json-files-in-php/
-function build(){
+''
+function build(flavorSet){
 	
+	if(typeof flavorSet == 'undefined') flavorSet = 'all';
+	
+	var filter = false;
 	var filterIds = [];
-	if(currentStore == 'franklin') filterIds = franklin.flavorIds;
-	else if (currentStore == 'linden') filterIds = linden.flavorIds;
+	if(flavorSet != 'all'){
+		filter = true;
+		
+		if(flavorSet == 'franklin') filterIds = franklin.flavorIds;
+		else if (flavorSet == 'linden') filterIds = linden.flavorIds;
+	}
 	
 	$('ul.flavor-list').html('');
 	
@@ -187,14 +119,12 @@ function build(){
 	
 		flavor = flavors[i];
 	
-		if($.inArray(flavor.id, filterIds) == -1) {
-			markup += '<li><div class="nameplate-image">';
-		}
-		else {
-			markup += '<li class="available"><div class="nameplate-image">';
+		if(filter && $.inArray(flavor.id, filterIds) == -1) {
+			continue;
 		}
 		
-		markup += '<a class="js-flavor-trigger" data-flavor-id="' + flavor.id + '" href="#">';
+		markup += '<li><div class="nameplate-image">';
+		markup += '<a class="js-flavor-trigger" data-flavor-id="' + flavor.id + '" href="#"><img class="nameplate" src="images/nameplates/n-' + Math.ceil(19*Math.random()) + '.jpg" />';
 		markup += '<span class="flavor-meta">' + flavor.flavor + '</span></a>';
 		markup += '</div>'
 		
@@ -212,5 +142,62 @@ function getTypeById(id){
 	}
 }
 
+function showFlavor(event){
+
+	event.preventDefault();
+	$('.flavor-detail').remove();
+	// hideFlavor();
+	var template = _.template($('#selected-flavor-template').html());
+	
+	var $target = $(this);
+	$('.selected').removeClass('selected');
+	var $targetLi = $target.parents('li').addClass('selected');
+	var flavorId = $target.attr('data-flavor-id');
+	
+	
+	var index = $('.flavor-list li').index($targetLi) + 1;
+	
+	//console.log(flavorId, index, $targetLi.width(), $('ul').width());
+	
+	var ulWidth = $('ul.flavor-list').width();
+	
+	var liPerRow = Math.floor(ulWidth/280);
+	
+	
+	
+	var $insertAfterMe = $('.flavor-list li').eq((Math.ceil(index/liPerRow) * liPerRow) - 1);
+	console.log('$insertAfterMe', $insertAfterMe);
+	if($insertAfterMe.length == 0) $insertAfterMe = $('.flavor-list li').last();
+	
+	var flavor = flavors[flavorId-1];
+	
+	var data = {
+		flavor: flavor.flavor,
+		description: flavor.description,
+		type: getTypeById(flavor.type)
+	}
+	
+	
+	
+	$insertAfterMe.after(template(data));
+
+	$('.flavor-detail').attr('id',flavorId);
+
+	var visibleFlavorId = $('.flavor-detail').attr('id');
+	var selectedTileID = $('.selected').find('a').data('flavor-id');
+	
+	console.log('visibleFlavorId',visibleFlavorId);
+}
+
+function showHide(){
+
+	$('.flavor-detail').css({ height: '0px' }).animate({ height: 150 }, 150);
+
+	// if (('.flavor-detail').hasClass('activist')){
+	// 	$('.flavor-detail').css({ height: '0px' }).animate({ height: 0 }, 150).delay(500).animate({ height: 150 }, 150);
+	// } else {
+	// 	$('.flavor-detail').css({ height: '0px' }).animate({ height: 150 }, 150).addClass('activist');
+	// }
+}
 
 });
