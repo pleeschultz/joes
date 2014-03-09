@@ -1,4 +1,5 @@
 <!doctype html>
+<html lang="en" ng-app="flavorboardApp">
 <head>
     <title>Sebastian Joe's Flavorboard</title>
     <link rel="stylesheet" href="css/screen.css">
@@ -9,9 +10,11 @@
     <link href='http://fonts.googleapis.com/css?family=Yellowtail|Parisienne|Yesteryear|Alex+Brush|Norican' rel='stylesheet' type='text/css'>
     <script src="js/vendor/jquery-1.9.1.min.js"></script>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/controller.js"></script>
     <script src="js/app.js"></script>
 </head>
-<body>
+<body ng-controller="FlavorListCtrl">
     <div class="wrapper">
 
         <header>
@@ -26,7 +29,19 @@
             </div>
         </header>
 
-        <ul class="blocks js-tiles">
+        <ul class="blocks js-tiles flavors">
+            <li ng-repeat="flavor in flavors" class="blocks-cell js-tiles-trigger">
+                <div class="tile">
+                    <img class="tile-img" src="{{flavor.img}}" alt="" />
+                    <div class="tile-content">
+                        <div class="flavor-info">
+                            <h2>{{flavor.name}}</h2>
+                            <p>{{flavor.details}}</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 
             <li class="blocks-cell js-tiles-trigger">
                 <div class="tile">
                     <img class="tile-img" src="images/nameplates/n-1.jpg" alt="" />
@@ -136,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-            </li>
+            </li> -->
         </ul>
     </div>
 </body>
