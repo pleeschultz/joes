@@ -22,7 +22,7 @@ flavorboardControllers.controller('FlavorListCtrl', ['$scope', '$http',
         2). flavor category- ice cream, sorbet or froyo
     */
 
-// flavorboardControllers.controller('FlavorDetailCtrl', ['$scope', '$routeParams',
-//   function($scope, $routeParams) {
-//     $scope.flavorId = $routeParams.flavorId;
-//   }]);
+flavorboardControllers.controller('FlavorDetailCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.flavorId = $routeParams.flavorId;
+  }]);

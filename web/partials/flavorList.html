@@ -10,7 +10,7 @@
             </div>
         </header>
         <ul class="blocks js-tiles tilesContainer tilesContainer_isActive">
-            <li ng-repeat="flavor in flavors | orderBy:orderProp" class="blocks-cell js-tiles-trigger">
+            <li ng-repeat="flavor in flavors | filter:query | orderBy:orderProp" class="blocks-cell js-tiles-trigger">
                 <div class="tile">
                     <img class="tile-img" src="{{flavor.img}}" alt="" />
                     <div class="tile-content">
