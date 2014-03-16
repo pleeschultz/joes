@@ -7,6 +7,23 @@ var APP = APP || {};
 
 })(jQuery);
 
+var flavorboardApp = angular.module('flavorboardApp', [
+  'ngRoute',
+  'flavorboardControllers'
+]);
+
+flavorboardApp.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+      when('/flavors', {
+        templateUrl: 'partials/flavorList.html',
+        controller: 'FlavorListCtrl'
+      })
+      .otherwise({
+        redirectTo: '/flavors'
+      });
+}]);
+
 /**
  * @fileOverview Tiles View Module File
  *

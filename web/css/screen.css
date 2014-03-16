@@ -257,9 +257,10 @@ h1 {
 /* ---------------------------------------------------------------------
  Tile
 ------------------------------------------------------------------------ */
-.tile {
-    cursor: pointer;
-}
+.tilesContainer { display: none; }
+.tilesContainer_isActive { display: block; }
+
+.tile { cursor: pointer; }
 
 .tile-img {
     border-radius: 8px;

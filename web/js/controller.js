@@ -2,26 +2,27 @@
 
 /* Controllers */
 
-var flavorboardApp = angular.module('flavorboardApp', []);
+var flavorboardControllers = angular.module('flavorboardControllers', []);
 
-flavorboardApp.controller('FlavorListCtrl', function($scope) {
-  $scope.flavors = [
-    {'name': 'dakota berry',
-     'details': 'Yummy yummy.',
-     'img': 'images/nameplates/n-1.jpg'
-    },
-    {'name': 'chocolate',
-     'details': 'boring!',
-     'img': 'images/nameplates/n-2.jpg'
-    },
-    {'name': 'loco coco',
-     'details': 'Fruity!',
-     'img': 'images/nameplates/n-3.jpg'
-    },
-    {'name': 'salty caramel',
-     'details': 'Weird Al!',
-     'img': 'images/nameplates/n-4.jpg'
-    },
-    
-  ];
-});
+flavorboardControllers.controller('FlavorListCtrl', ['$scope', '$http',
+    function($scope, $http) {
+    $http.get('json/flavors.json').success(function(data) {
+      $scope.flavors = data;
+    });
+}]);
+    /* $scope.orderProp = 'store';
+        This is a remnant from the two-way data binding from http://docs.angularjs.org/tutorial/step_04.
+        1. Can we add a 'store' property to these arrays, that can allow us all options AND specific store?
+        2. Then, how do we overwrite the 'store' value from the Admin?
+    */
+
+    /*
+    Additional filtering requirements:
+        1). keyword search
+        2). flavor category- ice cream, sorbet or froyo
+    */
+
+// flavorboardControllers.controller('FlavorDetailCtrl', ['$scope', '$routeParams',
+//   function($scope, $routeParams) {
+//     $scope.flavorId = $routeParams.flavorId;
+//   }]);
