@@ -1,0 +1,23 @@
+/* ---------------------------------------------------------------------
+ Base
+------------------------------------------------------------------------ */
+html, body {
+    height: 100%;
+    color: #004025;
+    background: rgb(255, 247, 236);
+    font: 12px 'Arial','Helvetica',sans-serif;
+}
+
+body {
+    font-size: 12px;
+ }
+
+p { margin-bottom: 1em; }
+
+a { text-decoration: none; }
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
