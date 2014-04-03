@@ -11,7 +11,7 @@ flavorboardControllers.controller('FlavorListCtrl', ['$scope', '$http',
     
     $http.get('flavors/flavors.json').success(function(data) {
          $scope.flavors =  data;
-         
+         /*
          var tags = [];
          
          var possibles = [];
@@ -253,13 +253,15 @@ flavorboardControllers.controller('FlavorListCtrl', ['$scope', '$http',
          	str += '"' + possible + '",\n';
          	
          });
+         
+         
          	console.log(str);
          	console.log(possibles.length);
          	
          var textArea = $('<textarea rows="200" cols="400"></textarea>');
          $('body').prepend(textArea);
          textArea.val(JSON.stringify(data, null, '\t'));
-         
+         */
          // Create ids
          /*
          var textArea = $('<textarea rows="200" cols="400"></textarea>');
