@@ -1,18 +1,13 @@
 requirejs.config({
-    baseUrl: "js/libs",
+    baseUrl: "js",
     paths: {
 		// libs
-		jquery: 'jquery-1.11.0.min',
-		underscore: 'underscore-min',
-		backbone: 'backbone-min',
-		tween: 'non-amd-tween-loader', // non AMD TweenLite loader
-		hammer: 'hammer.min',
-
-		// modules
-        app: '../app',
-        tiles: '../tiles',
-		flavors: '../flavors',
-		// tracking: '../tracking'
+		jquery: 'libs/jquery-1.11.0.min',
+		underscore: 'libs/underscore-min',
+		backbone: 'libs/backbone-min',
+		tween: 'libs/non-amd-tween-loader', // non AMD TweenLite loader
+		hammer: 'libs/hammer.min',
+        text: 'libs/text'
 	},
 	shim: {
 		tween: {
@@ -22,13 +17,3 @@ requirejs.config({
 		}
 	}
 });
-
-require(['jquery', 'backbone', 'app/controllers/app.controller'],
-	function ($, Backbone, AppController) {
-		$(function () {
-    		// Entry point
-    		console.log('entry point');
-            AppController.initialize();
-		});
-	}
-);
