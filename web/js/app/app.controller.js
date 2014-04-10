@@ -1,14 +1,14 @@
 define([
-	'text!app/config/app.config.json',
+	'text!app/app.config.json',
 	// 'routes/router',
 	// 'tracking/tracker',
 	// 'tcin/tcin',
 	// 'modals/controllers/modal.controller',
 	// 'app/collections/story.collection',
 	// 'content/collections/product.collection',
-	'app/models/app.model',
+	'app/app.model',
 	// 'app/models/navigation.model',
-	'app/views/app.view'
+	'app/app.view'
 	// 'app/controllers/navigation.controller',
 	// 'app/controllers/pages.controller',
 	// 'app/controllers/smokeTest.controller'
@@ -36,6 +36,9 @@ define([
 
 			// parse static config json
 			AppModel.addAppConfigData(AppConfig);
+
+			// Load and create the tile collection
+			
 
 			// // tracking init
 			// Tracker.initialize();
