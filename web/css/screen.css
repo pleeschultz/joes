@@ -120,36 +120,36 @@ h1 {
   padding: 0;
   letter-spacing: 0px; }
 
-.menu {
+.menuList {
   width: 100%;
-  height: 40px;
-  margin-top: 40px; }
-
-.menu ul {
   /* display: inline-block; */
-  margin: 0;
   padding: 0;
-  margin: 0 auto; }
+}
 
-.menu li {
+.menuList li {
   float: left;
   /*height: 40px;*/
   width: 33.33338%;
-  display: table; }
+  display: table; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-.menu li a {
+.menuList li a {
   display: table-cell;
   padding: 2px 20px;
-  background: #292622;
   color: #ADA79F;
   text-decoration: none;
-  height: 40px;
+  height: 100px;
   vertical-align: middle;
-  background: #292622;
-  border-radius: 10px 10px 0 0; }
+  background: #FFFAC7;
+  border-radius: 10px; 
+  -web-transition: color 0.2s;
+  transition: color 0.2s;
+}
 
-.menu li a.active {
-  background: #fff7ec;
+.menuList a.isActive {
+  background: #E8D3C6;
   color: #292622; }
 
 /* ---------------------------------------------------------------------
