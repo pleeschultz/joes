@@ -1,0 +1,21 @@
+<li class="blocks-cell">
+    <div class="tile">
+        <img class="tile-img" src="" alt="" />
+        <div class="tile-content">
+            <div class="flavor-info">
+                <h2><%= data.name %></h2>
+                <p><%= data.description %></p>
+                <p><%= data.type %></p>
+                <ul class="ingredients">
+                    <%
+                        var ingredient;
+                        for(var i=0; i< data.ingredients.length; i++){
+                            ingredient = data.ingredients[i];
+                    %>
+                        <li><%= ingredient %></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</li>

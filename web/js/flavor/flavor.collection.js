@@ -1,25 +1,21 @@
 define([
 	'backbone',
-	'app/models/story.model',
-	'app/models/app.model'
+	'flavor/flavor.model'
 ], function (
 	Backbone,
-	StoryModel,
-	AppModel
+	FlavorModel
 ) {
 
 	var FlavorCollection = Backbone.Collection.extend({
 		defferedFetch: null,
-		model: StoryModel,
+		model: FlavorModel,
+		url: 'data/flavors.json',
 		initialize: function(){
-			this.url = AppModel.get('urls').storyCollection;
 			this.defferedFetch = this.fetch({ merge: true });
-		},
-		fetch: function(){
-			
 		},
 		parse: function(data){
 			// additional parsing here
+			console.log(data);
 			return data;
 		}
 	});

@@ -1,31 +1,17 @@
 define([
 	'text!app/app.config.json',
-	// 'routes/router',
-	// 'tracking/tracker',
-	// 'tcin/tcin',
-	// 'modals/controllers/modal.controller',
-	// 'app/collections/story.collection',
-	// 'content/collections/product.collection',
 	'app/app.model',
-	// 'app/models/navigation.model',
-	'app/app.view'
-	// 'app/controllers/navigation.controller',
-	// 'app/controllers/pages.controller',
-	// 'app/controllers/smokeTest.controller'
+	'app/app.view',
+	'flavor/flavor.collection',
+	'flavor/flavors.view',
+	'flavor/flavor.view'
 ], function (
 	AppConfig,
-	// Router,
-	// Tracker,
-	// Tcin,
-	// ModalController,
-	// StoryCollection,
-	// ProductCollection,
 	AppModel,
-	// NavigationModel,
-	AppView
-	// NavigationController,
-	// PagesController,
-	// SmokeTestController
+	AppView,
+	FlavorCollection,
+	FlavorsView,
+	FlavorView
 ) {
 	var AppController = function(){
 
@@ -38,39 +24,26 @@ define([
 			AppModel.addAppConfigData(AppConfig);
 
 			// Load and create the tile collection
-			
+			var flavorCollection = new FlavorCollection();
 
-			// // tracking init
-			// Tracker.initialize();
-			//
-			// // factories
-			// //TcinFactory.initialize();
-			// Tcin.config();
-			//
-			// // parse non singleton model info
-			// // create user, intro, filters, etc... here
-			//
-			// // create navigation model
-			// var navigationModel = new NavigationModel();
-			// AppModel.set('navigationModel', navigationModel);
-			//
-			// // story collection
-			// var storyCollection = new StoryCollection();
-			// AppModel.set('storyCollection', storyCollection);
-			//
-			// // product collection
-			// //var productCollection = new ProductCollection();
-			// //AppModel.set('productCollection', productCollection);
-			//
 			// app view
 			var appView = new AppView({ model: AppModel });
 			appView.render();
-			//
-			// NavigationController.initialize();
-			// ModalController.initialize();
-			// SmokeTestController.initialize();
-			// PagesController.initialize();
-			// NavigationController.begin();
+
+			var flavorsView = new FlavorsView();
+
+			var flavorView;
+			// when flavors are loaded, build them here
+			flavorCollection.defferedFetch.done(function(){
+
+				flavorCollection.each(function(flavorModel){
+
+					flavorView = new FlavorView({ model: flavorModel });
+					flavorsView.$el.append(flavorView.$el);
+				});
+
+			});
+
 		}
 
 		return {
