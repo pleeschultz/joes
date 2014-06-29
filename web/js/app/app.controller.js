@@ -4,14 +4,19 @@ define([
 	'app/app.view',
 	'flavor/flavor.collection',
 	'flavor/flavors.view',
-	'flavor/flavor.view'
+	'flavor/flavor.view',
+
+	'flavorDetail/flavorDetailContainer.view'
+
 ], function (
 	AppConfig,
 	AppModel,
 	AppView,
 	FlavorCollection,
 	FlavorsView,
-	FlavorView
+	FlavorView,
+
+	FlavorDetailContainerView
 ) {
 	var AppController = function(){
 
@@ -25,6 +30,7 @@ define([
 
 			// Load and create the tile collection
 			var flavorCollection = new FlavorCollection();
+
 
 			// app view
 			var appView = new AppView({ model: AppModel });
@@ -41,8 +47,16 @@ define([
 					flavorView = new FlavorView({ model: flavorModel });
 					flavorsView.$el.append(flavorView.$el);
 				});
+				
+ 			});
 
-			});
+
+
+
+			var flavorDetailContainerView = new FlavorDetailContainerView();
+			// on open event
+			// new FlavorDetailView({ model: openedFlavorModel });
+			// flavorDetailContainerView.$el.append(newthing.$el);
 
 		}
 
