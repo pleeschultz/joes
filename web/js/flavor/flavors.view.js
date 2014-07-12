@@ -10,7 +10,7 @@ define([
 		el: '[data-view="flavors-view"]',
 
 		initialize: function() {
-			console.log('flavors view', this);
+			//console.log('flavors view', this);
 
 		},
 		render: function(){}

@@ -11,7 +11,7 @@ require(['requireConfig'], function (requireConfig) {
         function ($, Backbone, AppController) {
             $(function () {
                 // Entry point
-                console.log('entry point');
+                //console.log('entry point');
                 AppController.initialize();
             });
         }

@@ -48,7 +48,7 @@ define([
 			// if never sized before, do it immediately
 			if(this.model.get('firstResize')){
 				this.model.set({ firstResize: false });
-				console.log('====== INITIAL WINDOW SIZE', dimensions);
+				//console.log('====== INITIAL WINDOW SIZE', dimensions);
 				this.$el.css({ opacity: 1 });
 				this.model.set({ dimensions: dimensions });
 				return;

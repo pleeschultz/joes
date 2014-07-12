@@ -23,7 +23,7 @@ define([
 		// app entry point
 		function initialize(){
 
-			console.log('AppController.initialize()');
+			//console.log('AppController.initialize()');
 
 			// parse static config json
 			AppModel.addAppConfigData(AppConfig);
@@ -47,7 +47,7 @@ define([
 					flavorView = new FlavorView({ model: flavorModel });
 					flavorsView.$el.append(flavorView.$el);
 				});
-				
+
  			});
 
 

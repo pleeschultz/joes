@@ -8,7 +8,7 @@ define([
 		el: '[data-view="flavor-detail-container-view"]',
 
 		initialize: function() {
-			console.log('flavor detail container');
+			//console.log('flavor detail container');
 		}
 	});
 

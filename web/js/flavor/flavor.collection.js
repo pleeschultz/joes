@@ -1,7 +1,9 @@
 define([
+	'underscore',
 	'backbone',
 	'flavor/flavor.model'
 ], function (
+	_,
 	Backbone,
 	FlavorModel
 ) {
@@ -15,7 +17,18 @@ define([
 		},
 		parse: function(data){
 			// additional parsing here
-			console.log(data);
+
+		var missing = [];
+
+			_.each(data, function(flavor){
+				if(!flavor.photographed && flavor.type == 'ice-cream'){
+					console.log(flavor.name);
+					missing.push(flavor.name);
+				}
+			})
+			console.log(data.length);
+			console.log(missing.length + ' missing');
+
 			return data;
 		}
 	});
