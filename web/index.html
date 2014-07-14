@@ -1,72 +1,57 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>SJIC</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<!doctype html>
+<html lang="en" data-view="app-view">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Yellowtail|Parisienne|Yesteryear|Alex+Brush|Norican' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/global.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-	<body>
-		<!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-	
-<!-- Content -->
-	
-		<header>
-			<h1>Sebastian Joe's Ice Cream</h1>
-			<p class="flavor-subheading">We make it fresh daily. One batch at a time.</p>
-			<div class="menu">
-				<ul>
-					<li><a href="#" data-flavor-set="franklin">Franklin Ave</a></li>
-					<li><a href="#" data-flavor-set="all" class="active">All Flavors</a></li>
-					<li><a href="#" data-flavor-set="linden">Linden Hills</a></li>
-				</ul>
-			</div>
-		</header>	
+    <title>Sebastian Joe's Flavorboard</title>
+    <link rel="stylesheet" href="css/screen.css">
+<!--     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yellowtail|Parisienne|Yesteryear|Alex+Brush|Norican' rel='stylesheet' type='text/css'> -->
 
-		<ul class="flavor-list"></ul>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Sebastian Joe's Ice Cream</h1>
+            <p class="flavor-subheading">We make it fresh daily. One batch at a time.</p>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Franklin Ave</a></li>
+                    <li><a href="#" class="active">All Flavors</a></li>
+                    <li><a href="#">Linden Hills</a></li>
+                </ul>
+            </div>
+        </header>
+        <ul data-view="flavors-view" class="blocks">
+
+        </ul>
+        <div data-view="flavor-detail-container-view" class="" style="display: block; width: 100%; height: 100%; position: absolute; z-index: 10; top: 0; left: 0;">
+          stuff goes in here
+        </div>
+    </div>
 
 
-<!-- Underscore.js Templates -->
+<!--
+    <script type="text/html">
+        <li class="blocks-cell js-tiles-trigger">
+            <div class="tile">
+                <img class="tile-img" src="" alt="" />
+                <div class="tile-content">
+                    <div class="flavor-info">
+                        <h2>flavor name</h2>
+                        <p>flavor details</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </script>
+-->
 
-		<!-- selected template -->
-		<script id="selected-flavor-template" type="text/html">
-			<li class="flavor-detail">
-				<h1><%= flavor %></h1>
-				<p><b>type:</b> <%= type %></p>
-				<p><%= description %></p>
-			</li>
-		</script>
 
-<!-- Script Includes -->
+    <!-- js -->
+    <script data-main="js/index" src="js/libs/require.js"></script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js" type="text/javascript"></script>
-        <script src="js/app.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-
-  </body>
+</body>
 </html>
