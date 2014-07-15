@@ -1,6 +1,11 @@
 <li class="blocks-cell js-tiles-trigger">
     <div class="tile">
         <img class="tile-img" src=<%= data.image %> alt="" />
+
+        <% if(!data.hasNameplate){ %>
+            <p class="tile-title_noNamePlate"><%= data.name %></p>
+        <% } %>
+
         <div class="tile-content">
             <div class="flavor-info">
                 <h2><%= data.name %></h2>

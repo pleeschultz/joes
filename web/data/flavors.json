@@ -1,19 +1,18 @@
 [
 	{
 		"id": "angelica-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Angelica",
 		"description": "hazelnut and coffee roasted fresh at our store",
 		"type": "ice-cream",
 		"ingredients": [
 			"hazelnut",
 			"coffee"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "apple-crisp-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Apple Crisp",
 		"description": "vanilla ice cream with streusel topping, cinnamon and apples",
 		"type": "ice-cream",
@@ -24,23 +23,21 @@
 			"streusel",
 			"cinnamon",
 			"apples"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "baileys-irish-cream-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Bailey's Irish Cream",
 		"description": "ice cream infused with Bailey's Irish Cream",
 		"type": "ice-cream",
 		"ingredients": [
 			"baileys"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "baileys-coffee-chip-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Bailey's Coffee Chip",
 		"description": "Bailey's Irish Cream, coffee and chocolate chips",
 		"type": "ice-cream",
@@ -48,12 +45,11 @@
 			"baileys",
 			"coffee",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "baileys-raspberry-truffle-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Bailey's Raspberry Truffle",
 		"description": "Baileys Irish Cream with a raspberry background and raspberry truffles",
 		"type": "ice-cream",
@@ -62,36 +58,33 @@
 			"raspberry",
 			"truffle",
 			"truffles"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "basil-vanilla-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Basil Vanilla",
 		"description": "vanilla ice cream with fresh garden grown basil",
 		"type": "ice-cream",
 		"ingredients": [
 			"basil",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "banana-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Banana",
 		"description": "creamy banana ice cream- all that is missing is the peel",
 		"type": "ice-cream",
 		"ingredients": [
 			"banana",
 			"peel"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "banana-cream-pie-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Banana Cream Pie",
 		"description": "Banana ice cream with vanilla wafers and a hint of nutmeg",
 		"type": "ice-cream",
@@ -101,12 +94,11 @@
 			"vanilla",
 			"wafers",
 			"nutmeg"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "banana-foster-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Banana Foster",
 		"description": "banana and caramel ice creamwith rum",
 		"type": "ice-cream",
@@ -114,12 +106,11 @@
 			"banana",
 			"caramel",
 			"rum"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "before-dinner-mint-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Before Dinner Mint",
 		"description": "Mint ice cream with dark chocolate mint truffles",
 		"type": "ice-cream",
@@ -128,12 +119,11 @@
 			"dark",
 			"chocolate",
 			"truffles"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "big-bark-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Big Bark",
 		"description": "white chocolate with fresh roasted and salted almonds",
 		"type": "ice-cream",
@@ -142,12 +132,11 @@
 			"chocolate",
 			"salted",
 			"almonds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "black-cherry-truffle-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Black Cherry Truffle",
 		"description": "Cherry ice cream with dark sweet cherries and dark chocolate cherry truffles",
 		"type": "ice-cream",
@@ -159,12 +148,11 @@
 			"cherries",
 			"chocolate",
 			"truffles"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "black-forest-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Black Forest",
 		"description": "Rum cherry ice cream with dark sweet cherries and roasted and salted walnuts",
 		"type": "ice-cream",
@@ -176,12 +164,11 @@
 			"cherries",
 			"salted",
 			"walnuts"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "blackberry-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Blackberry",
 		"description": "vanilla ice cream and garden fresh blackberries",
 		"type": "ice-cream",
@@ -189,12 +176,11 @@
 			"blackberry",
 			"vanilla",
 			"blackberries"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "blueberry-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Blueberry",
 		"description": "vanilla ice cream and garden fresh blueberries",
 		"type": "ice-cream",
@@ -202,12 +188,11 @@
 			"blueberry",
 			"vanilla",
 			"blueberries"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "blueberry-banana-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Blueberry Banana",
 		"description": "blueberry banana ice cream with a hint of lemon",
 		"type": "ice-cream",
@@ -215,12 +200,11 @@
 			"blueberry",
 			"banana",
 			"lemon"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "cafe-latte-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Café Latte",
 		"description": "Sumatra coffee fresh roasted at our store blended with vanilla",
 		"type": "ice-cream",
@@ -230,12 +214,11 @@
 			"sumatra",
 			"coffee",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
-		"id": "cappuccino-heath-bar-ice-cream",
-		"photographed": true,
+		"id": "cappuccino-heath-ice-cream",
+		"hasNameplate": true,
 "name": "Cappuccino Heath Bar",
 		"description": "espresso coffee fresh roasted at our store with Heath Bar candy chunks",
 		"type": "ice-cream",
@@ -246,12 +229,11 @@
 			"coffee",
 			"candy",
 			"chunks"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "candy-cane-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Candy Cane",
 		"description": "vanilla ice cream loaded with candy cane",
 		"type": "ice-cream",
@@ -259,12 +241,11 @@
 			"candy",
 			"cane",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "caramel-cashew-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Caramel Cashew",
 		"description": "chocolate ice cream, roasted and salted cashews and caramel truffles",
 		"type": "ice-cream",
@@ -275,24 +256,22 @@
 			"salted",
 			"cashews",
 			"truffles"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "caramel-cinnamon-swirl-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Caramel Cinnamon Swirl",
 		"description": "cinnamon ice cream with a caramel swirl",
 		"type": "ice-cream",
 		"ingredients": [
 			"caramel",
 			"cinnamon"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "caramel-coffee-oreo-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Caramel Coffee Oreo",
 		"description": "fresh roasted coffee from our stores in a caramel ice cream with chunks of Oreo cookie",
 		"type": "ice-cream",
@@ -302,12 +281,11 @@
 			"oreo",
 			"chunks",
 			"cookie"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "caramel-pecan-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Caramel Pecan",
 		"description": "caramel ice cream with roasted and salted pecans",
 		"type": "ice-cream",
@@ -316,12 +294,11 @@
 			"pecan",
 			"salted",
 			"pecans"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chai-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chai",
 		"description": "vanilla ice cream spiced with Oregon Chai tea",
 		"type": "ice-cream",
@@ -330,12 +307,11 @@
 			"vanilla",
 			"spiced",
 			"tea"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chartreuse-chip-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Chartreuse Chip",
 		"description": "green chartreuse- a sweet liqueur from France, and chocolate chips",
 		"type": "ice-cream",
@@ -345,34 +321,31 @@
 			"green",
 			"liqueur",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate",
 		"type": "ice-cream",
 		"ingredients": [
 			"chocolate"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-amaretto-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Amaretto",
 		"description": "chocolate ice cream spiked with amaretto",
 		"type": "ice-cream",
 		"ingredients": [
 			"chocolate",
 			"amaretto"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-banana-chocolate-chip-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Banana Chocolate Chip",
 		"description": "CBCC- chocolate ice cream with banana, vanilla and chocolate chips",
 		"type": "ice-cream",
@@ -381,12 +354,11 @@
 			"banana",
 			"vanilla",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-biscotti-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Chocolate Biscotti",
 		"description": "chocolate ice cream with a hint of amaretto and vanilla loaded with Mom's homemade biscotti",
 		"type": "ice-cream",
@@ -395,12 +367,11 @@
 			"biscotti",
 			"amaretto",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-cha-cha-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Cha Cha",
 		"description": "chocolate ice cream with peanut butter and chocolate chips",
 		"type": "ice-cream",
@@ -409,12 +380,11 @@
 			"peanut",
 			"butter",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-chip-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Chip",
 		"description": "vanilla ice cream with chocolate chips",
 		"type": "ice-cream",
@@ -422,24 +392,22 @@
 			"chocolate",
 			"vanilla",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-chocolate-chip-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Chocolate Chip",
 		"description": "chocolate ice cream with chocolate chips",
 		"type": "ice-cream",
 		"ingredients": [
 			"chocolate",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-chip-teddy-graham-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Chip Teddy Graham",
 		"description": "vanilla ice cream with chocolate chips and chocolate chip teddy graham cookies",
 		"type": "ice-cream",
@@ -450,12 +418,11 @@
 			"vanilla",
 			"chocolate-chips",
 			"cookies"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-cinnamon-pretzel-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Cinnamon Pretzel",
 		"description": "chocolate ice cream with vanilla, cinnamon, and chocolate covered pretzels.",
 		"type": "ice-cream",
@@ -465,12 +432,11 @@
 			"pretzel",
 			"vanilla",
 			"pretzels"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-coyote-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Coyote",
 		"description": "chocolate ice cream with cinnamon and cayenne pepper- spicy hot!",
 		"type": "ice-cream",
@@ -479,12 +445,11 @@
 			"cinnamon",
 			"cayenne",
 			"pepper"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-english-toffee-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate English Toffee",
 		"description": "chocolate ice cream with vanilla and heath bar candy chunks",
 		"type": "ice-cream",
@@ -496,12 +461,11 @@
 			"heath-bar",
 			"candy",
 			"chunks"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-grand-marnier-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Chocolate Grand Marnier",
 		"description": "chocolate ice cream with vanilla, brandy, and a hint of orange rind",
 		"type": "ice-cream",
@@ -512,12 +476,11 @@
 			"brandy",
 			"orange",
 			"rind"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-malted-vanilla-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Malted Vanilla",
 		"description": "chocolate ice cream with vanilla malt powder",
 		"type": "ice-cream",
@@ -527,12 +490,11 @@
 			"vanilla",
 			"malt",
 			"powder"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-pistachio-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Pistachio",
 		"description": "chocolate ice cream with roasted and salted pistachios",
 		"type": "ice-cream",
@@ -541,12 +503,11 @@
 			"pistachio",
 			"salted",
 			"pistachios"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-swiss-almond-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate Swiss Almond",
 		"description": "chocolate ice cream with almond, vanilla, and dark chocolate covered almonds",
 		"type": "ice-cream",
@@ -557,24 +518,22 @@
 			"vanilla",
 			"dark",
 			"almonds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "cinnamon-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Cinnamon",
 		"description": "cinnamon ice cream with a hint of vanilla",
 		"type": "ice-cream",
 		"ingredients": [
 			"cinnamon",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "coconut-cream-pie-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Coconut Cream Pie",
 		"description": "vanilla ice cream with shredded coconut, and vanilla wafers",
 		"type": "ice-cream",
@@ -583,12 +542,11 @@
 			"pie",
 			"vanilla",
 			"wafers"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "coffee-banana-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Coffee Banana",
 		"description": "French roast coffee fresh roasted in our store with bananas",
 		"type": "ice-cream",
@@ -598,12 +556,11 @@
 			"french",
 			"roast",
 			"bananas"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "coffee-copa-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Coffee Copa",
 		"description": "espresso coffee fresh roasted in our store, chocolate, and a hint of orange",
 		"type": "ice-cream",
@@ -612,12 +569,11 @@
 			"espresso",
 			"chocolate",
 			"orange"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "coffee-oreo-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Coffee Oreo",
 		"description": "fresh roasted coffee from our store and chunks of Oreo cookie",
 		"type": "ice-cream",
@@ -626,12 +582,11 @@
 			"oreo",
 			"chunks",
 			"cookie"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "cookie-dough-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Cookie Dough",
 		"description": "vanilla ice cream loaded with chocolate chip cookie dough and extra chocolate chips",
 		"type": "ice-cream",
@@ -641,24 +596,22 @@
 			"vanilla",
 			"chocolate",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "creme-fresh-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Crème Fresh",
 		"description": "ice cream blended with fresh buttermilk",
 		"type": "ice-cream",
 		"ingredients": [
 			"crème",
 			"buttermilk"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "creme-fresh-curry-crunch-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Crème Fresh Curry Crunch",
 		"description": "ice cream blended with fresh buttermilk, spiked with fresh curry powder and roasted and salted pralines ",
 		"type": "ice-cream",
@@ -670,12 +623,11 @@
 			"powder",
 			"salted",
 			"pralines"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "choco-nut-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Choco Nut",
 		"description": "chocolate ice cream with roasted and salted mixed nuts",
 		"type": "ice-cream",
@@ -686,12 +638,11 @@
 			"salted",
 			"mixed",
 			"nuts"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "dakota-berry-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Dakota Berry",
 		"description": "black cherry white chocolate ice cream with roasted and salted almonds",
 		"type": "ice-cream",
@@ -703,12 +654,11 @@
 			"chocolate",
 			"salted",
 			"almonds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "danish-nut-roll-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Danish Nut Roll",
 		"description": "vanilla and caramel ice cream with a hint of cinnamon and honey roasted peanuts",
 		"type": "ice-cream",
@@ -721,12 +671,11 @@
 			"cinnamon",
 			"honey",
 			"peanuts"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "danza-di-limon-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Danza Di Limon",
 		"description": "lemon ice cream with roasted and salted almonds- dance of the lemons!",
 		"type": "ice-cream",
@@ -738,24 +687,22 @@
 			"salted",
 			"almonds",
 			"lemons"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "double-chocolate-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Double Chocolate",
 		"description": "so much chocolate should require a license to consume",
 		"type": "ice-cream",
 		"ingredients": [
 			"chocolate",
 			"license"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "dreamsicle-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Dreamsicle",
 		"description": "vanilla ice cream an orange and lemon swirl",
 		"type": "ice-cream",
@@ -763,12 +710,11 @@
 			"vanilla",
 			"orange",
 			"lemon"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "dulce-de-leche-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Dulce de Leche",
 		"description": "vanilla swirled with caramel",
 		"type": "ice-cream",
@@ -778,12 +724,11 @@
 			"leche",
 			"vanilla",
 			"caramel"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "egg-nog-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Egg Nog",
 		"description": "creamy egg nog spiced with rum ice cream",
 		"type": "ice-cream",
@@ -791,12 +736,11 @@
 			"egg-nog",
 			"spiced",
 			"rum"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "french-roast-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "French Roast",
 		"description": "fresh French roast coffee from our store",
 		"type": "ice-cream",
@@ -804,24 +748,22 @@
 			"french",
 			"roast",
 			"coffee"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "ginger-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Ginger",
 		"description": "ginger ice cream with Australian candied ginger",
 		"type": "ice-cream",
 		"ingredients": [
 			"ginger",
 			"candied"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "golden-valley-sunflower-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Golden Valley Sunflower",
 		"description": "sunflower seed ice cream with vanilla, honey, and roasted and salted sunflower seeds",
 		"type": "ice-cream",
@@ -832,12 +774,11 @@
 			"honey",
 			"salted",
 			"seeds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "graham-cracker-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Graham Cracker",
 		"description": "vanilla ice cream with graham cracker cookies",
 		"type": "ice-cream",
@@ -846,12 +787,11 @@
 			"cracker",
 			"vanilla",
 			"cookies"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "grand-marnier-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Grand Marnier",
 		"description": "vanilla ice cream with brandy and fresh orange zest",
 		"type": "ice-cream",
@@ -860,12 +800,11 @@
 			"vanilla",
 			"brandy",
 			"orange"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "green-tea-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Green Tea",
 		"description": "a vanilla green tea ice cream",
 		"type": "ice-cream",
@@ -873,23 +812,21 @@
 			"green",
 			"tea",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "hazelnut-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Hazelnut",
 		"description": "rich hazelnut infused ice cream",
 		"type": "ice-cream",
 		"ingredients": [
 			"hazelnut"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "heath-bar-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Heath Bar",
 		"description": "vanilla ice cream loaded with Heath Bar candy chunks",
 		"type": "ice-cream",
@@ -898,24 +835,22 @@
 			"vanilla",
 			"candy",
 			"chunks"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "honey-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Honey",
 		"description": "vanilla ice cream infused with creamy honey",
 		"type": "ice-cream",
 		"ingredients": [
 			"honey",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "honey-cinnamon-crisp-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Honey Cinnamon Crisp",
 		"description": "honey cinnamon ice cream with graham crackers",
 		"type": "ice-cream",
@@ -925,12 +860,11 @@
 			"crisp",
 			"graham",
 			"crackers"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "immaculate-confection-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Immaculate Confection",
 		"description": "Mpls Vanilla with ginger, honey, and streusel made with fresh rolled oats.",
 		"type": "ice-cream",
@@ -941,12 +875,11 @@
 			"streusel",
 			"rolled",
 			"oats"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "kare-11s-golden-sunrise-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "KARE 11's Golden Sunrise",
 		"description": "lemon ice cream with candied lemon rind and golden Oreo cookies",
 		"type": "ice-cream",
@@ -958,24 +891,22 @@
 			"rind",
 			"oreo",
 			"cookies"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "key-lime-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Key Lime",
 		"description": "Florida key lime infused ice cream",
 		"type": "ice-cream",
 		"ingredients": [
 			"key",
 			"lime"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "kingfield-crunch-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Kingfield Crunch",
 		"description": "cinnamon caramel ice cream with toasted coconut and coffee truffles",
 		"type": "ice-cream",
@@ -988,12 +919,11 @@
 			"coconut",
 			"coffee",
 			"truffles"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "kingfield-sweet-deal-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Kingfield Sweet Deal",
 		"description": "vanilla caramel ice cream with ginger, Heath Bar chunks and chocolate chips",
 		"type": "ice-cream",
@@ -1004,13 +934,12 @@
 			"heath-bar",
 			"chunks",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 
 	{
 		"id": "loco-coco-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Loco Coco",
 		"description": "Toasted coconut, strawberries, and cayenne pepper- spicy hot!",
 		"type": "ice-cream",
@@ -1022,12 +951,11 @@
 			"strawberries",
 			"cayenne",
 			"pepper"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "malted-vanilla-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Malted Vanilla",
 		"description": "vanilla ice cream with malt powder",
 		"type": "ice-cream",
@@ -1036,12 +964,11 @@
 			"vanilla",
 			"malt",
 			"powder"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 		{
 		"id": "malted-chocolate-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Malted Chocolate",
 		"description": "chocolate ice cream with malt powder",
 		"type": "ice-cream",
@@ -1054,7 +981,7 @@
 	},
 	{
 		"id": "mandarin-orange-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Mandarin Orange",
 		"description": "vanilla ice cream blended with sweet Mandarin oranges",
 		"type": "ice-cream",
@@ -1064,12 +991,11 @@
 			"orange",
 			"vanilla",
 			"oranges"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mandarin-orange-chip-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Mandarin Orange Chip",
 		"description": "vanilla ice cream blended with sweet Mandarin oranges and chocolate chips",
 		"type": "ice-cream",
@@ -1080,24 +1006,22 @@
 			"vanilla",
 			"oranges",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mango-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Mango",
 		"description": "mango ice cream with a hint of lemon",
 		"type": "ice-cream",
 		"ingredients": [
 			"mango",
 			"lemon"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "maple-walnut-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Maple Walnut",
 		"description": "maple ice cream with roasted and salted walnuts",
 		"type": "ice-cream",
@@ -1106,12 +1030,11 @@
 			"walnut",
 			"salted",
 			"walnuts"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "marion-berry-dc-nut-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Marion Berry D.C. Nut",
 		"description": "fresh Marion Berries from Washington State with roasted and salted almonds- in honor of another Marion Berry from Washington",
 		"type": "ice-cream",
@@ -1121,24 +1044,22 @@
 			"berries",
 			"salted",
 			"almonds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "minneapolis-vanilla-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Minneapolis Vanilla",
 		"description": "vanilla ice cream with vanilla bean specks",
 		"type": "ice-cream",
 		"ingredients": [
 			"vanilla",
 			"bean"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mint-chocolate-chip-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Mint Chocolate Chip",
 		"description": "vanilla ice cream with fresh mint from the garden and chocolate chips",
 		"type": "ice-cream",
@@ -1147,12 +1068,11 @@
 			"chocolate",
 			"vanilla",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mint-milano-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Mint Milano",
 		"description": "vanilla ice cream with fresh mint from the garden and Pepperidge Farm Mint Milano cookies",
 		"type": "ice-cream",
@@ -1162,12 +1082,11 @@
 			"vanilla",
 			"pepperidge",
 			"cookies"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "michaels-mix-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Michael's Mix",
 		"description": "",
 		"type": "ice-cream",
@@ -1175,7 +1094,7 @@
 	},
 	{
 		"id": "mint-mocha-chip-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Mint Mocha Chip",
 		"description": "chocolate mint ice cream with fresh roasted coffee from our store and chocolate chips",
 		"type": "ice-cream",
@@ -1185,12 +1104,11 @@
 			"chocolate",
 			"coffee",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mint-oreo-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Mint Oreo",
 		"description": "vanilla and fresh mint ice cream with Oreo cookie chunks",
 		"type": "ice-cream",
@@ -1200,12 +1118,11 @@
 			"vanilla",
 			"cookie",
 			"chunks"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mocha-almond-fudge-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Mocha Almond Fudge",
 		"description": "vanilla almond French roast coffee fresh roasted in our stores with roasted and salted almonds and a fudge swirl.",
 		"type": "ice-cream",
@@ -1219,12 +1136,11 @@
 			"coffee",
 			"salted",
 			"almonds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mocha-chip-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Mocha Chip",
 		"description": "fresh roasted French roast coffee from our store with chocolate chips",
 		"type": "ice-cream",
@@ -1234,12 +1150,11 @@
 			"roast",
 			"coffee",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mounds-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Mounds",
 		"description": "chocolate ice cream with coconut, and chocolate chips",
 		"type": "ice-cream",
@@ -1248,12 +1163,11 @@
 			"chocolate",
 			"coconut",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "natural-butter-almond-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Natural Butter Almond",
 		"description": " Almond ice cream with roasted and salted almonds.",
 		"type": "ice-cream",
@@ -1262,12 +1176,11 @@
 			"almond",
 			"salted",
 			"almonds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "nicollet-avenue-pothole-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Nicollet Avenue Pothole",
 		"description": "Chocolate caramel ice cream with Heath Bar chunks, Fudge truffles and a Fudge Swirl with Sea Salt",
 		"type": "ice-cream",
@@ -1280,12 +1193,11 @@
 			"truffles",
 			"sea",
 			"salt"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "new-orleans-pecan-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "New Orleans Pecan",
 		"description": "bourbon caramel ice cream with fresh roasted and salted pecans.",
 		"type": "ice-cream",
@@ -1295,12 +1207,11 @@
 			"caramel",
 			"salted",
 			"pecans"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "oatmeal-raisin-cookie-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Oatmeal Raisin Cookie",
 		"description": "raisin studded ice cream with vanilla and oatmeal cookie chunks",
 		"type": "ice-cream",
@@ -1310,12 +1221,11 @@
 			"cookie",
 			"vanilla",
 			"chunks"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "oreo-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Oreo",
 		"description": "one of our most famous flavors for the sheer volume of Oreo cookie chunks that we put in.",
 		"type": "ice-cream",
@@ -1323,12 +1233,11 @@
 			"oreo",
 			"cookie",
 			"chunks"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "passion-fruit-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Passion Fruit",
 		"description": "fresh passion fruit blended with a vanilla ice cream",
 		"type": "ice-cream",
@@ -1336,12 +1245,11 @@
 			"passion",
 			"fruit",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pavarotti-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Pavarotti",
 		"description": "caramel banana vanilla ice cream and chocolate chips",
 		"type": "ice-cream",
@@ -1350,12 +1258,11 @@
 			"banana",
 			"vanilla",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "peaces-of-the-world-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Peaces of the World",
 		"description": "caramel almond ice cream with chocolate covered pretzels and caramel truffles",
 		"type": "ice-cream",
@@ -1365,12 +1272,11 @@
 			"chocolate",
 			"pretzels",
 			"truffles"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "peach-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Peach",
 		"description": "fresh peaches blended with a vanilla ice cream",
 		"type": "ice-cream",
@@ -1378,24 +1284,22 @@
 			"peach",
 			"peaches",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "peanut-butter-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Peanut Butter",
 		"description": "peanut butter infused ice cream",
 		"type": "ice-cream",
 		"ingredients": [
 			"peanut",
 			"butter"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "peanut-butter-banana-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Peanut Butter Banana",
 		"description": "peanut butter and banana blended to perfection.",
 		"type": "ice-cream",
@@ -1403,12 +1307,11 @@
 			"peanut",
 			"butter",
 			"banana"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "peanut-butter-chunk-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Peanut Butter Chunk",
 		"description": "peanut butter and light chocolate ice cream with peanut butter truffles",
 		"type": "ice-cream",
@@ -1418,12 +1321,11 @@
 			"chunk",
 			"chocolate",
 			"truffles"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pear-ginger-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Pear Ginger",
 		"description": "pear ginger ice cream with Australian candied ginger",
 		"type": "ice-cream",
@@ -1431,24 +1333,22 @@
 			"pear",
 			"ginger",
 			"candied"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pears-and-pernod-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Pears and Pernod",
 		"description": "fresh pears spiked with Pernod –an aperitif from France",
 		"type": "ice-cream",
 		"ingredients": [
 			"pears",
 			"pernod"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pecan-rum-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Pecan Rum",
 		"description": "cinnamon rum ice cream with a blend of warm spices and roasted and salted pecans",
 		"type": "ice-cream",
@@ -1459,12 +1359,11 @@
 			"spices",
 			"salted",
 			"pecans"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pina-colada-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Pina Colada",
 		"description": " pineapple coconut ice cream with a hint of rum",
 		"type": "ice-cream",
@@ -1472,24 +1371,22 @@
 			"pineapple",
 			"coconut",
 			"rum"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pineapple-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Pineapple",
 		"description": "fresh pineapple blended with vanilla ice cream",
 		"type": "ice-cream",
 		"ingredients": [
 			"pineapple",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pineapple-banana-toasted-coconut-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Pineapple Banana Toasted Coconut",
 		"description": "fresh pineapple and banana with toasted coconut",
 		"type": "ice-cream",
@@ -1499,12 +1396,11 @@
 			"banana",
 			"toasted",
 			"coconut"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pineapple-macadamia-nut-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Pineapple Macadamia Nut",
 		"description": "fresh pineapple, coconut, and fresh roasted and salted macadamia nuts",
 		"type": "ice-cream",
@@ -1515,12 +1411,11 @@
 			"coconut",
 			"salted",
 			"nuts"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pineapple-toasted-coconut-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Pineapple Toasted Coconut",
 		"description": "fresh pineapple with toasted coconut",
 		"type": "ice-cream",
@@ -1529,12 +1424,11 @@
 			"pineapple",
 			"toasted",
 			"coconut"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pistachio-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Pistachio",
 		"description": "pistachio ice cream with fresh roasted and salted pistachios",
 		"type": "ice-cream",
@@ -1542,12 +1436,11 @@
 			"pistachio",
 			"salted",
 			"pistachios"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "praline-home-companion-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Praline Home Companion",
 		"description": "chocolate cinnamon ice cream with fresh roasted and salted praline pecans",
 		"type": "ice-cream",
@@ -1557,24 +1450,22 @@
 			"cinnamon",
 			"salted",
 			"pecans"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pumpkin-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Pumpkin",
 		"description": "close your eyes and it tastes just like the pie!",
 		"type": "ice-cream",
 		"ingredients": [
 			"pumpkin",
 			"pie"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "raspberry-chocolate-chip-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Raspberry Chocolate Chip",
 		"description": "One of our most famous flavors- raspberry ice cream loaded with chocolate chips",
 		"type": "ice-cream",
@@ -1582,12 +1473,11 @@
 			"raspberry",
 			"chocolate",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "roasted-garlic-almond-chip-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Roasted Garlic Almond Chip",
 		"description": "designed for the garlic festival in Gilroy California- roasted garlic honey lemon ice cream with roasted and salted almonds and chocolate chips",
 		"type": "ice-cream",
@@ -1599,24 +1489,22 @@
 			"salted",
 			"almonds",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "rum-banana-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Rum Banana",
 		"description": "a banana ice cream spiked with rum",
 		"type": "ice-cream",
 		"ingredients": [
 			"rum",
 			"banana"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "rum-raisin-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Rum Raisin",
 		"description": "rum ice cream loaded with rum soaked raisins",
 		"type": "ice-cream",
@@ -1624,12 +1512,11 @@
 			"rum",
 			"raisin",
 			"raisins"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "ryes-double-rye-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Rye's Double Rye",
 		"description": "designed for our friends at Rye deli- rye whiskey ice cream studded with caraway seeds and a hint of orange",
 		"type": "ice-cream",
@@ -1639,12 +1526,11 @@
 			"caraway",
 			"seeds",
 			"orange"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "salty-caramel-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Salty Caramel",
 		"description": "caramel ice cream with a caramel swirl and sea salt",
 		"type": "ice-cream",
@@ -1653,12 +1539,11 @@
 			"caramel",
 			"sea",
 			"salt"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "senior-mo-mint-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Senior Mo-mint",
 		"description": "chocolate mint ice cream with fresh mint, chocolate chips and mint truffles- you won't soon forget this one!",
 		"type": "ice-cream",
@@ -1667,24 +1552,22 @@
 			"mint",
 			"chocolate-chips",
 			"truffles"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "sebastianos-favorite-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Sebastiano's Favorite",
 		"description": "guaranteed by the founder's grandfather to take the worry out of the day- brandy and amaretto infused ice cream",
 		"type": "ice-cream",
 		"ingredients": [
 			"brandy",
 			"amaretto"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "sicilian-coffee-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Sicilian Coffee",
 		"description": "fresh roasted espresso from our store with a hint of orange zest",
 		"type": "ice-cream",
@@ -1692,12 +1575,11 @@
 			"coffee",
 			"espresso",
 			"orange"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "spumoni-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Spumoni",
 		"description": "almond ice cream with lemon and orange zest, apricots, and roasted & salted almonds",
 		"type": "ice-cream",
@@ -1709,12 +1591,11 @@
 			"apricots",
 			"salted",
 			"almonds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "strawberry-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Strawberry",
 		"description": "fresh strawberries blended with vanilla ice cream",
 		"type": "ice-cream",
@@ -1722,12 +1603,11 @@
 			"strawberry",
 			"strawberries",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "strawberry-banana-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Strawberry Banana",
 		"description": "fresh strawberries and bananas blended with vanilla ice cream",
 		"type": "ice-cream",
@@ -1737,12 +1617,11 @@
 			"strawberries",
 			"bananas",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "strawberry-rhubarb-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Strawberry Rhubarb",
 		"description": "fresh strawberries and rhubarb blended with vanilla ice cream",
 		"type": "ice-cream",
@@ -1751,12 +1630,11 @@
 			"rhubarb",
 			"strawberries",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "surly-bender-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Surly Bender",
 		"description": "designed for our friends at Surly- Surly Bender beer with a hint of chocolate, vanilla, and honey",
 		"type": "ice-cream",
@@ -1767,12 +1645,11 @@
 			"chocolate",
 			"vanilla",
 			"honey"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "swiss-almond-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Swiss Almond",
 		"description": "Almond ice cream with chocolate covered almonds",
 		"type": "ice-cream",
@@ -1781,12 +1658,11 @@
 			"almond",
 			"chocolate",
 			"almonds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "toasted-almond-joy-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Toasted Almond Joy",
 		"description": "light chocolate ice cream with toasted coconut and fresh roasted and salted almonds",
 		"type": "ice-cream",
@@ -1798,12 +1674,11 @@
 			"coconut",
 			"salted",
 			"almonds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "toasted-coconut-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Toasted Coconut",
 		"description": "vanilla coconut ice cream with freshly toasted coconut",
 		"type": "ice-cream",
@@ -1811,12 +1686,11 @@
 			"toasted",
 			"coconut",
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "toasted-sesame-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Toasted Sesame",
 		"description": "vanilla ice cream with toasted sesame seeds",
 		"type": "ice-cream",
@@ -1826,12 +1700,11 @@
 			"sesame",
 			"vanilla",
 			"seeds"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "turtle-latte-ice-cream",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Turtle Latte",
 		"description": "fresh coffee roasted in our store blended with vanilla and caramel, loaded with caramel truffles",
 		"type": "ice-cream",
@@ -1842,23 +1715,21 @@
 			"vanilla",
 			"caramel",
 			"truffles"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "vanilla-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Vanilla",
 		"description": "for the ice cream purist- this uses the world's best vanilla",
 		"type": "ice-cream",
 		"ingredients": [
 			"vanilla"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "when-pigs-fly-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "When Pigs Fly",
 		"description": "maple ice cream with candied bacon, black pepper and chocolate chips",
 		"type": "ice-cream",
@@ -1869,24 +1740,22 @@
 			"black",
 			"pepper",
 			"chocolate-chips"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "white-chocolate-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "White Chocolate",
 		"description": "white chocolate ice cream",
 		"type": "ice-cream",
 		"ingredients": [
 			"white",
 			"chocolate"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "white-licorice-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "White Licorice",
 		"description": "ice cream with freshly ground anise seed",
 		"type": "ice-cream",
@@ -1895,12 +1764,11 @@
 			"licorice",
 			"ground",
 			"anise"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "white-monkey-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "White Monkey",
 		"description": "white chocolate ice cream with bananas and fresh roasted and salted pecans",
 		"type": "ice-cream",
@@ -1910,12 +1778,11 @@
 			"bananas",
 			"salted",
 			"pecans"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "white-orangina-ice-cream",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "White Orangina",
 		"description": "white chocolate ice cream with orange zest and orange Milano cookies",
 		"type": "ice-cream",
@@ -1926,65 +1793,59 @@
 			"orange",
 			"milano",
 			"cookies"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "blueberry-sorbet",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Blueberry",
 		"type": "sorbet",
 		"ingredients": [
 			"blueberry"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "blueberry-mint-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Blueberry Mint",
 		"type": "sorbet",
 		"ingredients": [
 			"blueberry",
 			"mint"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "chocolate-sorbet",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Chocolate",
 		"type": "sorbet",
 		"ingredients": [
 			"chocolate"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "cranberry-orange-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Cranberry Orange",
 		"type": "sorbet",
 		"ingredients": [
 			"cranberry",
 			"orange"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "cucumber-mint-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Cucumber Mint",
 		"type": "sorbet",
 		"ingredients": [
 			"cucumber",
 			"mint"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "grapefruit-campari-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Grapefruit Campari",
 		"description": "pink grapefruit and Campari liqueur",
 		"type": "sorbet",
@@ -1994,66 +1855,60 @@
 			"campari",
 			"pink",
 			"liqueur"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "key-lime-sorbet",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Key Lime",
 		"type": "sorbet",
 		"ingredients": [
 			"key",
 			"lime"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "lemon-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Lemon",
 		"type": "sorbet",
 		"ingredients": [
 			"lemon"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "lemonade-mint-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Lemonade Mint",
 		"type": "sorbet",
 		"ingredients": [
 			"lemonade",
 			"mint"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "lemon-lime-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Lemon Lime",
 		"type": "sorbet",
 		"ingredients": [
 			"lemon",
 			"lime"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "lime-basil-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Lime Basil",
 		"type": "sorbet",
 		"ingredients": [
 			"lime",
 			"basil"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "lime-daiquiri-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Lime Daiquiri",
 		"description": "key lime with rum",
 		"type": "sorbet",
@@ -2061,22 +1916,20 @@
 			"lime",
 			"key",
 			"rum"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mango-sorbet",
-		"photographed": true,
+		"hasNameplate": true,
 "name": "Mango",
 		"type": "sorbet",
 		"ingredients": [
 			"mango"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "martees-margarita-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Martee's Margarita",
 		"description": "lime, lemon and tequila",
 		"type": "sorbet",
@@ -2084,66 +1937,60 @@
 			"lime",
 			"lemon",
 			"tequila"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "mint-pink-grapefruit-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Mint Pink Grapefruit",
 		"type": "sorbet",
 		"ingredients": [
 			"mint",
 			"pink",
 			"grapefruit"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "orange-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Orange",
 		"type": "sorbet",
 		"ingredients": [
 			"orange"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "orange-basil-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Orange Basil",
 		"type": "sorbet",
 		"ingredients": [
 			"orange",
 			"basil"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "passion-fruit-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Passion Fruit",
 		"type": "sorbet",
 		"ingredients": [
 			"passion",
 			"fruit"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pear-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Pear",
 		"type": "sorbet",
 		"ingredients": [
 			"pear"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pina-colada-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Pina Colada",
 		"description": "pineapple, coconut and rum",
 		"type": "sorbet",
@@ -2151,99 +1998,90 @@
 			"pineapple",
 			"coconut",
 			"rum"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "pink-grapefruit-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Pink Grapefruit",
 		"type": "sorbet",
 		"ingredients": [
 			"pink",
 			"grapefruit"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "plum-ginger-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Plum Ginger",
 		"type": "sorbet",
 		"ingredients": [
 			"plum",
 			"ginger"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "raspberry-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Raspberry",
 		"type": "sorbet",
 		"ingredients": [
 			"raspberry"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "red-papaya-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Red Papaya",
 		"type": "sorbet",
 		"ingredients": [
 			"red",
 			"papaya"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "roasted-plum-black-peppercorn-sorbet",
-		"photographed": false,
+				"hasNameplate": false,
 "name": "Roasted Plum Black Peppercorn",
 		"type": "sorbet",
 		"kosher": false,
 		"ingredients": [
 			"plum",
 			"black-peppercorn"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "strawberry-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Strawberry",
 		"type": "sorbet",
 		"ingredients": [
 			"strawberry"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "strawberry-basil-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Strawberry Basil",
 		"type": "sorbet",
 		"ingredients": [
 			"strawberry",
 			"basil"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "strawberry-black-peppercorn-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Strawberry Black Peppercorn",
 		"type": "sorbet",
 		"ingredients": [
 			"strawberry",
 			"black-peppercorn"
-		],
-		"image": "images/nameplates/n-1.jpg"
+		]
 	},
 	{
 		"id": "watermelon-sorbet",
-		"photographed": false,
+		"hasNameplate": false,
 "name": "Watermelon",
 		"type": "sorbet",
 		"ingredients": [

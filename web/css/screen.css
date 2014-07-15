@@ -196,14 +196,6 @@ h1 {
   .blocks-cell {
     width: 25%; } }
 
-@media only screen and (min-width: 601px) {
-  .blocks-cell {
-    width: 20%; } }
-
-@media only screen and (min-width: 801px) {
-  .blocks-cell {
-    width: 16.66667%; } }
-
 /* ---------------------------------------------------------------------
  Tile
 ------------------------------------------------------------------------ */
@@ -214,7 +206,8 @@ h1 {
   display: block; }
 
 .tile {
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
 
 .tile-img {
   width: 100%;
@@ -228,6 +221,15 @@ h1 {
 .tile-img:hover {
   -webkit-box-shadow: 0 0 1em #333333;
   box-shadow: 0 0 1em #333333; }
+
+.tile-title_noNamePlate {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  line-height: 0;
+  font-size: 1em;
+  text-align: center;
+  color: #fff7ec; }
 
 /* TODO - use better screen-reader only convention */
 .tile-content {
