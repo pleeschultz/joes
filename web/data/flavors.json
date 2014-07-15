@@ -966,6 +966,19 @@
 			"powder"
 		]
 	},
+		{
+		"id": "malted-chocolate-ice-cream",
+		"photographed": true,
+"name": "Malted Chocolate",
+		"description": "chocolate ice cream with malt powder",
+		"type": "ice-cream",
+		"ingredients": [
+			"malted",
+			"chocolate",
+			"malt",
+			"powder"
+		]
+	},
 	{
 		"id": "mandarin-orange-ice-cream",
 		"photographed": true,
@@ -1020,7 +1033,7 @@
 		]
 	},
 	{
-		"id": "marion-berry-d.c.-nut-ice-cream",
+		"id": "marion-berry-dc-nut-ice-cream",
 		"photographed": true,
 "name": "Marion Berry D.C. Nut",
 		"description": "fresh Marion Berries from Washington State with roasted and salted almonds- in honor of another Marion Berry from Washington",
@@ -1070,6 +1083,14 @@
 			"pepperidge",
 			"cookies"
 		]
+	},
+	{
+		"id": "michaels-mix-ice-cream",
+		"photographed": true,
+"name": "Michael's Mix",
+		"description": "",
+		"type": "ice-cream",
+		"ingredients": []
 	},
 	{
 		"id": "mint-mocha-chip-ice-cream",
