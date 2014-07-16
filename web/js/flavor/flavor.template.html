@@ -7,7 +7,7 @@
         <% } %>
 
         <div class="tile-content">
-            <div class="flavor-info">
+            <a class="flavor-info" title=<% data.name %> href="#">
                 <h2><%= data.name %></h2>
                 <p><%= data.description %></p>
                 <p><%= data.type %></p>
@@ -20,7 +20,7 @@
                         <li><%= ingredient %></li>
                     <% } %>
                 </ul>
-            </div>
+            </a>
         </div>
     </div>
 </li>
