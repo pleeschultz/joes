@@ -99,8 +99,7 @@ img {
  Menu
 ------------------------------------------------------------------------ */
 header {
-  margin: 0 0 10px 0;
-  padding: 30px 0;
+  padding: 30px 0 0;
   color: #231c13;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -109,6 +108,12 @@ header {
 h1 {
   font-size: 5em;
   margin: 0.5em 0; }
+
+h2 {
+  font-size: 58px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: white; }
 
 .flavor-subheading {
   color: #ADA79F;
@@ -121,11 +126,11 @@ h1 {
 
 .menu {
   width: 100%;
-  height: 10em;
   margin-top: 40px; }
 
 .menu ul {
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .menu li {
   float: left;
@@ -144,7 +149,7 @@ h1 {
   box-sizing: border-box; }
 
 .menu .active {
-  background: white;
+  background: #f9da97;
   color: #231c13; }
 
 /* ---------------------------------------------------------------------
