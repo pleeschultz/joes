@@ -18,6 +18,11 @@ var Tiles = function(){
     };
 
     function toggleSlide (e) {
+        $('.flavor-description').removeClass('flavor-description-isActive');
+        setTimeout(function(){
+                $('.flavor-description').addClass('flavor-description-isActive');
+            }
+            , 200);
         var $this = $(e.currentTarget);
 
         /* 
@@ -51,8 +56,11 @@ var Tiles = function(){
         /* 
             CLASS SWAP
         */
-        $('.js-tiles').find('.js-tiles-trigger').removeClass('tile-info-isActive');
-        $('.js-tiles').find('.js-tiles-trigger').eq(findEnd).addClass('tile-info-isActive');
+        $('.js-tiles').find('.js-tiles-trigger')
+                      .removeClass('tile-info-isActive');
+        $('.js-tiles').find('.js-tiles-trigger')
+                      .eq(findEnd)
+                      .addClass('tile-info-isActive');
 
         /*
             DETERMINE OFFSET

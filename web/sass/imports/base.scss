@@ -32,6 +32,7 @@ img {
  red: #D1322E
 ------------------------------------------------------------------------ */
 $dark : #211A11;
+$red: #D1322E;
 
 @mixin box-sizing($box){
     -webkit-box-sizing: $box;
@@ -46,4 +47,12 @@ $dark : #211A11;
     -ms-transform: $type;
     -o-transform: $type;
     transform: $type;
+}
+
+@mixin transition($timing){
+	-webkit-transition: $timing;
+    -moz-transition: $timing;
+    -ms-transition: $timing;
+    -o-transition: $timing;
+    transition: $timing;
 }

@@ -235,18 +235,18 @@ h2 {
   display: block;
   cursor: pointer;
   position: relative;
+  padding: 1em;
+  background-color: #211A11;
+  margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 1em;
-  background-color: #211A11;
-  margin: 0;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; }
+  -webkit-transition: margin-bottom 0.2s ease-out;
+  -moz-transition: margin-bottom 0.2s ease-out;
+  -ms-transition: margin-bottom 0.2s ease-out;
+  -o-transition: margin-bottom 0.2s ease-out;
+  transition: margin-bottom 0.2s ease-out; }
 
 .tile-img {
   width: 100%;
@@ -286,7 +286,23 @@ h2 {
   margin-bottom: 400px; }
 
 .flavor-description {
-  background: red; }
+  width: 1px;
+  height: 1px;
+  crop: rect(1px 1px 1px 1px);
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -ms-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out; }
+
+.flavor-description-isActive {
+  background: #D1322E;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+  opacity: 1; }
 
 /* ---------------------------------------------------------------------
  Flavor

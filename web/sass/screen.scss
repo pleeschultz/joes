@@ -64,15 +64,11 @@
     display: block;
     cursor: pointer;
     position: relative;
-    @include box-sizing(border-box);
     padding: 1em;
     background-color: $dark;
     margin: 0;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+    @include box-sizing(border-box);
+    @include transition(margin-bottom 0.2s ease-out);
 }
 
 .tile-img {
@@ -120,7 +116,21 @@
 }
 
 .flavor-description {
-    background: red;
+    width: 1px;
+    height: 1px;
+    crop: rect(1px 1px 1px 1px);
+    overflow: hidden;
+    opacity: 0;
+    @include transition(opacity 0.2s ease-out);
+
+}
+
+.flavor-description-isActive {
+    background: $red;
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    opacity: 1;
 }
 
 /* ---------------------------------------------------------------------
@@ -159,6 +169,5 @@
     -webkit-background-size:100px 100px;
     -moz-background-size:100px 100px;
     background-size: 100px 100px;
-
     margin-bottom: 0.5em;
 }
