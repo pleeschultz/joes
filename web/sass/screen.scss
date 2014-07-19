@@ -1,16 +1,6 @@
 @import "imports/reset.scss";
 @import "imports/base.scss";
 @import "imports/menu.scss";
-/* ---------------------------------------------------------------------
- Color Pallete
-
- dark: #211A11
- dark orange: #D48255
- light: #FBECA8
- light orange: #F19162
- red: #D1322E
------------------------------------------------------------------------- */
-
 
 /* ---------------------------------------------------------------------
  Wrapper
@@ -20,11 +10,13 @@
     max-width: 960px;
     margin: 0 auto;
     min-height: 100%;
-    /*padding: 0 10px;*/
-    /*border-left: 10px solid #fde2bf;
-    border-right: 10px solid #fde2bf;*/
-    // -webkit-box-shadow: 1px 1px 46px #eaeaea;
-    // box-shadow: 1px 1px 46px #eaeaea;
+    border-left: 10px solid $dark;
+    border-right: 10px solid $dark;
+    @include hardware-acceleration(translate3d(0,0,0));
+}
+
+.wrapper-inner {
+    position: relative;
 }
 
 /* ---------------------------------------------------------------------
@@ -33,22 +25,24 @@
 
 .blocks {
     overflow: hidden;
-    padding: 1em 0 0 1em;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    border: 1px solid white;
+    @include box-sizing(border-box);
     background: white;
+    position: relative;
 }
 
 .blocks-cell {
     float: left;
     width: 50%;
-    padding: 0 1em 1em 0;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    border: 2px solid white;
+        margin: 0;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    @include box-sizing(border-box);
     @media screen and (min-width: 401px){
         width: 33.3333%;
     }
@@ -60,22 +54,6 @@
     }
 }
 
-// .blocks-row {
-//     overflow: hidden;
-//     width: 100%;
-//     height: 0;
-//     text-align: center;
-//     margin-left: -0.25em;
-// }
-
-// @media only screen and (min-width: 601px){
-//     .blocks-cell { width: 20%; }
-// }
-
-// @media only screen and (min-width: 801px){
-//     .blocks-cell { width: 16.66666667%;}
-// }
-
 /* ---------------------------------------------------------------------
  Tile
 ------------------------------------------------------------------------ */
@@ -86,20 +64,20 @@
     display: block;
     cursor: pointer;
     position: relative;
-    box-sizing: border-box;
-    padding: 0.5em;
-    background-color: #222;
-    border-radius: 0.5em;
-}
-
-.tile-img {
-    width: 100%;
-    border-radius: 0.5em;
+    @include box-sizing(border-box);
+    padding: 1em;
+    background-color: $dark;
+    margin: 0;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+}
+
+.tile-img {
+    width: 100%;
+    border-radius: 0.5em;
 }
 
 .tile-img:hover {
@@ -135,6 +113,14 @@
     display: block;
     margin: 0 auto;
     position: relative;
+}
+
+.tile-info-isActive {
+    margin-bottom: 400px;
+}
+
+.flavor-info {
+    background: red;
 }
 
 /* ---------------------------------------------------------------------

@@ -11,7 +11,6 @@ define([
 
 		initialize: function() {
 			//console.log('flavors view', this);
-
 		},
 		render: function(){}
 	});

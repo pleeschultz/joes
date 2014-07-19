@@ -96,6 +96,15 @@ img {
   height: auto; }
 
 /* ---------------------------------------------------------------------
+ Color Pallete
+
+ dark: #211A11
+ dark orange: #D48255
+ light: #FBECA8
+ light orange: #F19162
+ red: #D1322E
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
  Menu
 ------------------------------------------------------------------------ */
 header {
@@ -136,6 +145,9 @@ h2 {
   float: left;
   width: 33.33338%;
   display: table;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
 .menu a {
@@ -146,6 +158,9 @@ h2 {
   height: 6em;
   vertical-align: middle;
   font-size: 2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
 .menu .active {
@@ -153,44 +168,49 @@ h2 {
   color: #231c13; }
 
 /* ---------------------------------------------------------------------
- Color Pallete
-
- dark: #211A11
- dark orange: #D48255
- light: #FBECA8
- light orange: #F19162
- red: #D1322E
------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------
  Wrapper
 ------------------------------------------------------------------------ */
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   min-height: 100%;
-  /*padding: 0 10px;*/
-  /*border-left: 10px solid #fde2bf;
-    border-right: 10px solid #fde2bf;*/ }
+  border-left: 10px solid #211A11;
+  border-right: 10px solid #211A11;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.wrapper-inner {
+  position: relative; }
 
 /* ---------------------------------------------------------------------
  Blocks
 ------------------------------------------------------------------------ */
 .blocks {
   overflow: hidden;
-  padding: 1em 0 0 1em;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  border: 1px solid white;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
-  background: white; }
+  background: white;
+  position: relative; }
 
 .blocks-cell {
   float: left;
   width: 50%;
-  padding: 0 1em 1em 0;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  border: 2px solid white;
+  margin: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box; }
   @media screen and (min-width: 401px) {
     .blocks-cell {
@@ -215,19 +235,22 @@ h2 {
   display: block;
   cursor: pointer;
   position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0.5em;
-  background-color: #222;
-  border-radius: 0.5em; }
-
-.tile-img {
-  width: 100%;
-  border-radius: 0.5em;
+  padding: 1em;
+  background-color: #211A11;
+  margin: 0;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
+
+.tile-img {
+  width: 100%;
+  border-radius: 0.5em; }
 
 .tile-img:hover {
   -webkit-box-shadow: 0 0 1em #333333;
@@ -258,6 +281,12 @@ h2 {
   display: block;
   margin: 0 auto;
   position: relative; }
+
+.tile-info-isActive {
+  margin-bottom: 400px; }
+
+.flavor-info {
+  background: red; }
 
 /* ---------------------------------------------------------------------
  Flavor

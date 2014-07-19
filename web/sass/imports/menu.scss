@@ -47,7 +47,7 @@ h2 {
     float: left; 
     width: 33.33338%;
     display: table;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 
 }
 
@@ -60,7 +60,7 @@ h2 {
     height: 6em;
     vertical-align: middle;
     font-size: 2em;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 .menu .active {

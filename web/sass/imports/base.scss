@@ -21,3 +21,29 @@ img {
     // width: 100%;
     height: auto;
 }
+
+/* ---------------------------------------------------------------------
+ Color Pallete
+
+ dark: #211A11
+ dark orange: #D48255
+ light: #FBECA8
+ light orange: #F19162
+ red: #D1322E
+------------------------------------------------------------------------ */
+$dark : #211A11;
+
+@mixin box-sizing($box){
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+    -ms-box-sizing: $box;
+    box-sizing: $box;
+}
+
+@mixin hardware-acceleration($type){
+    -webkit-transform: $type;
+    -moz-transform: $type;
+    -ms-transform: $type;
+    -o-transform: $type;
+    transform: $type;
+}
