@@ -4,17 +4,12 @@ var Tiles = function(){
     setupHandlers();
     enable();
 
-    this.isEnabled = false;
-
     this.$tileMatrix = $('.js-tiles');
     this.$tiles = $('.js-tiles-trigger');
     this.$window = $(window);
 
     function setupHandlers (){
         this.eventHandler = $.proxy(toggleSlide, this);
-        this.removeInfoHandler = $.proxy(removeInfo, this);
-        this.isEnabled = true;
-
     };
 
     function enable (){
@@ -23,11 +18,14 @@ var Tiles = function(){
     };
 
     function toggleSlide (e) {
-        // console.log('what wat');
         var $this = $(e.currentTarget);
-        var index = $('.js-tiles-trigger').index($this) + 1;
-        // var infoHeight = $this.find('.flavor-info').outerHeight(true);
 
+        /* 
+            MEASUREMENTS
+        */
+
+        // DETERMINE EQ OF THE TRIGGERED LI
+        var index = $('.js-tiles-trigger').index($this) + 1;
 
         // TOTAL LI
         var totalLi = $('.js-tiles-trigger').length;
@@ -40,7 +38,6 @@ var Tiles = function(){
 
         // LI PER ROW
         var liPerRow = Math.floor(ulWidth/liWidth);
-        // console.log('li per row ' + liPerRow);
 
         // FIND LAST LI IN CURRENT ROW
         var findEnd = (Math.ceil(index/liPerRow) * liPerRow -1);
@@ -51,123 +48,48 @@ var Tiles = function(){
         //TILE HEIGHT
         var tileHeight = $('.js-tiles-trigger')[0].offsetHeight;
 
+        /* 
+            CLASS SWAP
+        */
         $('.js-tiles').find('.js-tiles-trigger').removeClass('tile-info-isActive');
         $('.js-tiles').find('.js-tiles-trigger').eq(findEnd).addClass('tile-info-isActive');
 
+        /*
+            DETERMINE OFFSET
+        */
+
         // NUMBER OF PREV LI
         prevLi = $('.tile-info-isActive').prevAll('.js-tiles-trigger').length;
-        console.log('num of previous li ' + prevLi);
-        console.log('li per row ' + liPerRow);
+
         // CURRENT ROW
         currentRow = Math.ceil(prevLi/liPerRow);
-        
-        console.log('current tile height is ' + tileHeight + ' times ' + currentRow);
-        console.log('current row is ' + currentRow);
 
         // OFFSET
         var offset = currentRow * tileHeight;
-        console.log('offset is ' + offset)
 
-        $('.flavor-info').css('top',offset);
-
-        // console.log('index is ' + index);
-        // console.log('li width ' + liWidth);
-        // console.log("ul width " + ulWidth);
-    
-        // console.log('total number of rows ' + totalRows);
-
-        updateElement($this, index);
-
-        // var $tileInfoContainer = $('.js-tiles-feature');
-        // var self = this;
+        // APPLY OFFSET
+        $('.flavor-description').css('top', offset);
 
         updateInfo($this, index);
-
-        // this.$tileMatrix
-        //     .find($tileInfoContainer)
-        //         .addClass('isActive')
-        //         .attr('id',index)
-        //         .animate({ height: infoHeight }, 350);
-
-        // $tileInfoContainer
-        //         .addClass('isActive')
-        //         .attr('id',index)
-        //         .animate({ height: infoHeight }, 350);
 
     };
 
     function updateInfo ($this, index){
+        /*
+            GET THAT CURRENT FLAVOR INFO
+            SET IT IN THE FLAVOR DESCRIPTION
+        */
+        var currentInfo = $this.find('.flavor-info').html();
+        $('.flavor-description').html(' ');
 
-        // var $offset = $('.tile-info-isActive').offset();
-        // console.log('this is the $offset left ' + $offset.left + ' and offset top ' + $offset.top);
-        // $offsetAdj = currentRow * tileHeight;
-        // console.log('offset adjust ' + $offsetAdj);
-
-        $('.flavor-info').css({
-            // left: $offset.left,
-            // top: $offsetAdj
-        })    
-
-        
-
-        var currentInfo = $this.find('.tile-content').html();
-
-        // var tileId = (Math.ceil($tileInfoContainer.attr('id')));
-
-        // if ((index) === (tileId)){
-        //     closeSlide();
-        //     return;
-        // }
-
-        // $tileInfoContainer.find('.flavor-info').remove();
-        // $tileInfoContainer.find('.feature').append(this.currentInfo);
-        // $('.js-tiles-feature .flavor-info').fadeIn(1000);
+        $('.flavor-description').append(currentInfo);
 
     };
 
     function closeSlide (){
-        $oldInfo
-            .animate({ height: 0 }, 350, function(){
-                $(this).remove();
-            });
+       // CUZ PEOPLE JUST WANT TO CLOSE SHIT SOMETIMES
+       // COMING SOON
     };
 
-    function removeInfo (){
-        $info = $('.js-tiles li.isActive');
-        console.log('removeInfo');
-        $info.remove();
-
-    };
-
-    function updateElement ($this, index){
-        console.log('updateElement has fired');
-        // console.log("this is " + $this);
-        // console.log("index is " + index);
-        // console.log($this.text());
-        $oldInfo = $('.js-tiles li.isActive');
-
-        
-        // var $insertAfterMe = $this.eq((Math.ceil(index/liPerRow) * liPerRow) - 1)
-
-        // $this.eq(MATH).addClass('boiing');
-
-        // if ($insertAfterMe.length === 0) {
-        //     $insertAfterMe = $('.js-tiles li').last();
-
-        //     console.log('is this true');
-        // }
-
-        // if ($insertAfterMe.next().hasClass('isActive') || $insertAfterMe.last().hasClass('isActive')){
-        //     return;
-        //     console.log('is this truer');
-        // } else {
-        //     closeSlide();
-        // }
-
-        // $insertAfterMe.after("<li class='js-tiles-feature blocks-row'><div class='feature'></div></li>");
-
-        return this;
-
-    };
 }
 
