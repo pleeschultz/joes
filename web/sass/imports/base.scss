@@ -4,7 +4,7 @@
 html, body {
     height: 100%;
     color: #004025;
-    background: rgb(255, 247, 236);
+    background: rgb(249, 218, 151);
     font: 12px 'Arial','Helvetica',sans-serif;
 }
 
@@ -18,6 +18,41 @@ a { text-decoration: none; }
 
 img {
     display: block;
-    width: 100%;
+    // width: 100%;
     height: auto;
+}
+
+/* ---------------------------------------------------------------------
+ Color Pallete
+
+ dark: #211A11
+ dark orange: #D48255
+ light: #FBECA8
+ light orange: #F19162
+ red: #D1322E
+------------------------------------------------------------------------ */
+$dark : #211A11;
+$red: #D1322E;
+
+@mixin box-sizing($box){
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+    -ms-box-sizing: $box;
+    box-sizing: $box;
+}
+
+@mixin hardware-acceleration($type){
+    -webkit-transform: $type;
+    -moz-transform: $type;
+    -ms-transform: $type;
+    -o-transform: $type;
+    transform: $type;
+}
+
+@mixin transition($timing){
+	-webkit-transition: $timing;
+    -moz-transition: $timing;
+    -ms-transition: $timing;
+    -o-transition: $timing;
+    transition: $timing;
 }

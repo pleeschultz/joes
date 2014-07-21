@@ -1,0 +1,336 @@
+/* ---------------------------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body, h1, h2, h3, h4 {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:focus {
+  outline: 0; }
+
+/* Always show a vertical scrollbar, even when there is no scrolling */
+html {
+  overflow-y: scroll; }
+
+/* Don't let iOS and WinMobile mobile-optimize text for you */
+/* Turn this rule on for mobile sites or sites using mediaqueries */
+/*
+html {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+*/
+/* ---------------------------------------------------------------------
+ HTML5 Block / Inline Block declarations
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+input[type=search] {
+  -webkit-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* ---------------------------------------------------------------------
+ Base
+------------------------------------------------------------------------ */
+html, body {
+  height: 100%;
+  color: #004025;
+  background: #f9da97;
+  font: 12px 'Arial', 'Helvetica', sans-serif; }
+
+body {
+  font-size: 12px; }
+
+p {
+  margin-bottom: 1em; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  height: auto; }
+
+/* ---------------------------------------------------------------------
+ Color Pallete
+
+ dark: #211A11
+ dark orange: #D48255
+ light: #FBECA8
+ light orange: #F19162
+ red: #D1322E
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+ Menu
+------------------------------------------------------------------------ */
+header {
+  padding: 30px 0 0;
+  color: #231c13;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background: #f46f47; }
+
+h1 {
+  font-size: 5em;
+  margin: 0.5em 0; }
+
+h2 {
+  font-size: 58px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: white; }
+
+.flavor-subheading {
+  color: #ADA79F;
+  font-family: 'Open Sans';
+  font-size: 2.7em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0px; }
+
+.menu {
+  width: 100%;
+  margin-top: 40px; }
+
+.menu ul {
+  margin: 0 auto;
+  overflow: hidden; }
+
+.menu li {
+  float: left;
+  width: 33.33338%;
+  display: table;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.menu a {
+  display: table-cell;
+  background: #231c13;
+  color: white;
+  text-decoration: none;
+  height: 6em;
+  vertical-align: middle;
+  font-size: 2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.menu .active {
+  background: #f9da97;
+  color: #231c13; }
+
+/* ---------------------------------------------------------------------
+ Wrapper
+------------------------------------------------------------------------ */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 100%;
+  border-left: 10px solid #211A11;
+  border-right: 10px solid #211A11;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.wrapper-inner {
+  position: relative; }
+
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+.blocks {
+  overflow: hidden;
+  border: 1px solid white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+  position: relative; }
+
+.blocks-cell {
+  float: left;
+  width: 50%;
+  border: 2px solid white;
+  margin: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media screen and (min-width: 401px) {
+    .blocks-cell {
+      width: 33.3333%; } }
+  @media screen and (min-width: 768px) {
+    .blocks-cell {
+      width: 25%; } }
+  @media screen and (min-width: 1048px) {
+    .blocks-cell {
+      width: 20%; } }
+
+/* ---------------------------------------------------------------------
+ Tile
+------------------------------------------------------------------------ */
+.tilesContainer {
+  display: none; }
+
+.tilesContainer_isActive {
+  display: block; }
+
+.tile {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding: 1em;
+  background-color: #211A11;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: margin-bottom 0.2s ease-out;
+  -moz-transition: margin-bottom 0.2s ease-out;
+  -ms-transition: margin-bottom 0.2s ease-out;
+  -o-transition: margin-bottom 0.2s ease-out;
+  transition: margin-bottom 0.2s ease-out; }
+
+.tile-img {
+  width: 100%;
+  border-radius: 0.5em; }
+
+.tile-img:hover {
+  -webkit-box-shadow: 0 0 1em #333333;
+  box-shadow: 0 0 1em #333333; }
+
+.tile-title_noNamePlate {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  line-height: 0;
+  font-size: 1em;
+  text-align: center;
+  color: #fff7ec; }
+
+/* TODO - use better screen-reader only convention */
+.tile-content {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px 1px 1px 1px);
+  overflow: hidden; }
+
+.screen-reader {
+  font-size: 0;
+  color: transparent; }
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  position: relative; }
+
+.tile-info-isActive {
+  margin-bottom: 400px; }
+
+.flavor-description {
+  width: 1px;
+  height: 1px;
+  crop: rect(1px 1px 1px 1px);
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -ms-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out; }
+
+.flavor-description-isActive {
+  background: #D1322E;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+  opacity: 1; }
+
+/* ---------------------------------------------------------------------
+ Flavor
+------------------------------------------------------------------------ */
+.flavor-info {
+  margin: 0 auto 0.5em;
+  padding: 2em 0;
+  width: 250px; }
+
+.flavor-info p:last-child {
+  margin-bottom: 0; }
+
+.js-tiles-feature .flavor-info {
+  display: none; }
+
+/* ---------------------------------------------------------------------
+ Feature - Theme
+------------------------------------------------------------------------ */
+.feature {
+  -webkit-box-shadow: inset 1px 1px 10px #999;
+  box-shadow: inset 1px 1px 10px #999;
+  background-color: #ffe8ca;
+  background-image: -webkit-linear-gradient(45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0), -webkit-linear-gradient(-45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0);
+  background-image: -moz-linear-gradient(45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0), -moz-linear-gradient(-45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0);
+  background-image: -ms-linear-gradient(45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0), -ms-linear-gradient(-45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0);
+  background-image: -o-linear-gradient(45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0), -o-linear-gradient(-45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0);
+  background-image: linear-gradient(45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0), linear-gradient(-45deg, #ffe4c0 25%, transparent 25%, transparent 75%, #ffe4c0 75%, #ffe4c0);
+  -webkit-background-size: 100px 100px;
+  -moz-background-size: 100px 100px;
+  background-size: 100px 100px;
+  margin-bottom: 0.5em; }

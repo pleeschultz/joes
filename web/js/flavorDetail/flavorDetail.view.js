@@ -12,6 +12,7 @@ define([
 		initialize: function() {
 			this.template = _.template(FlavorTemplate);
 			this.render();
+
 		},
 		render: function(){
 			//console.log(FlavorTemplate);

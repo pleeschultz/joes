@@ -2,7 +2,6 @@
 @import "imports/base.scss";
 @import "imports/menu.scss";
 
-
 /* ---------------------------------------------------------------------
  Wrapper
 ------------------------------------------------------------------------ */
@@ -11,11 +10,13 @@
     max-width: 960px;
     margin: 0 auto;
     min-height: 100%;
-    /*padding: 0 10px;*/
-    /*border-left: 10px solid #fde2bf;
-    border-right: 10px solid #fde2bf;*/
-    -webkit-box-shadow: 1px 1px 46px #eaeaea;
-    box-shadow: 1px 1px 46px #eaeaea;
+    border-left: 10px solid $dark;
+    border-right: 10px solid $dark;
+    @include hardware-acceleration(translate3d(0,0,0));
+}
+
+.wrapper-inner {
+    position: relative;
 }
 
 /* ---------------------------------------------------------------------
@@ -24,42 +25,34 @@
 
 .blocks {
     overflow: hidden;
-    padding: 0.5em 0 0 0.5em;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    border: 1px solid white;
+    @include box-sizing(border-box);
+    background: white;
+    position: relative;
 }
 
 .blocks-cell {
     float: left;
-    width: 33.3333%;
-    padding: 0 0.5em 0.5em 0;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    width: 50%;
+    border: 2px solid white;
+        margin: 0;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    @include box-sizing(border-box);
+    @media screen and (min-width: 401px){
+        width: 33.3333%;
+    }
+    @media screen and (min-width: 768px){
+        width: 25%;
+    }
+    @media screen and (min-width: 1048px){
+        width: 20%;
+    }
 }
-
-.blocks-row {
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    text-align: center;
-    margin-left: -0.25em;
-}
-
-@media only screen and (min-width: 401px){
-    .blocks-cell { width: 25%; }
-}
-
-// @media only screen and (min-width: 601px){
-//     .blocks-cell { width: 20%; }
-// }
-
-// @media only screen and (min-width: 801px){
-//     .blocks-cell { width: 16.66666667%;}
-// }
 
 /* ---------------------------------------------------------------------
  Tile
@@ -68,18 +61,19 @@
 .tilesContainer_isActive { display: block; }
 
 .tile {
+    display: block;
     cursor: pointer;
     position: relative;
+    padding: 1em;
+    background-color: $dark;
+    margin: 0;
+    @include box-sizing(border-box);
+    @include transition(margin-bottom 0.2s ease-out);
 }
 
 .tile-img {
     width: 100%;
-    border-radius: 25px;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+    border-radius: 0.5em;
 }
 
 .tile-img:hover {
@@ -106,6 +100,39 @@
     overflow: hidden;
 }
 
+.screen-reader {
+    font-size: 0;
+    color: transparent;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tile-info-isActive {
+    margin-bottom: 400px;
+}
+
+.flavor-description {
+    width: 1px;
+    height: 1px;
+    crop: rect(1px 1px 1px 1px);
+    overflow: hidden;
+    opacity: 0;
+    @include transition(opacity 0.2s ease-out);
+
+}
+
+.flavor-description-isActive {
+    background: $red;
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    opacity: 1;
+}
+
 /* ---------------------------------------------------------------------
  Flavor
 ------------------------------------------------------------------------ */
@@ -129,7 +156,7 @@
 ------------------------------------------------------------------------ */
 
 .feature {
-    background: rgb(255, 235, 208);
+    // background: rgb(255, 235, 208);
     -webkit-box-shadow: inset 1px 1px 10px #999;
     box-shadow: inset 1px 1px 10px #999;
     background-color: rgb(255, 232, 202);
@@ -142,6 +169,5 @@
     -webkit-background-size:100px 100px;
     -moz-background-size:100px 100px;
     background-size: 100px 100px;
-
     margin-bottom: 0.5em;
 }
