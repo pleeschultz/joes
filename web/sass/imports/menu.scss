@@ -11,11 +11,6 @@ header {
     background: rgb(244, 111, 71);
 }
 
-h1 {
-    font-size: 5em;
-    margin: 0.5em 0;
-}
-
 @font-face {
   font-family: 'Pacifico';
   font-style: normal;
@@ -23,12 +18,25 @@ h1 {
   src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
 
-h2 {
-    font-size: 58px;
-    font-family:Pacifico;
-    line-height: 1.4;
+.heading {
+    font-size: 48px;
+    line-height: 1;
     font-weight: bold;
     color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.heading-s {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.heading-fancy {
+    font-family: Pacifico;
+}
+
+.text-l {
+  font-size: 2em;
 }
 
 .flavor-subheading {

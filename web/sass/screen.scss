@@ -24,16 +24,16 @@
 
 .blocks {
     overflow: hidden;
-    border: 1px solid white;
+    border: 1px solid $light;
     @include box-sizing(border-box);
-    background: white;
+    background: $light;
     position: relative;
 }
 
 .blocks-cell {
     float: left;
     width: 50%;
-    border: 2px solid white;
+    border: 2px solid $light;
         margin: 0;
     @include hardware-acceleration(translate3d(0,0,0));
     -webkit-transition: all 0.4s ease;
@@ -115,12 +115,15 @@
 }
 
 .flavor-description {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 1px;
     height: 1px;
     crop: rect(1px 1px 1px 1px);
     overflow: hidden;
     opacity: 0;
-    @include transition(opacity 0.2s ease-out);
+    @include transition(opacity 0.3s ease-out);
 
 }
 
@@ -140,6 +143,42 @@
     margin: 0 auto 0.5em;
     padding: 2em 0;
     width: 250px;
+}
+
+.flavor-info-img {
+    display: none;
+    @media screen and (min-width: 401px){
+        display: block;
+        width: 33.3333%;
+        float: left;
+        height: 100%;
+        padding: 30px;
+        background: black;
+        background: rgba(0,0,0,0.6);
+        @include box-sizing(border-box);
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+.flavor-info-bd {
+    padding: 30px;
+    @include box-sizing(border-box);
+    li {
+        font-size: 1.8em;
+        display: inline-block;
+        background-color: #211A11;
+        padding: 6px;
+        margin-bottom: 4px;
+        border-radius: 10px;
+        color: white;
+    }
+    @media screen and (min-width: 401px){
+        float: left;
+        width: 66%;
+    }
 }
 
 .flavor-info p:last-child {

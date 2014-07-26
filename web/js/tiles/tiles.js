@@ -1,5 +1,4 @@
 var Tiles = function(){
-    console.log('bite my shiny metal ass');
 
     setupHandlers();
     enable();

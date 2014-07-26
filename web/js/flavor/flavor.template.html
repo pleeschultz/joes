@@ -8,18 +8,28 @@
 
         <div class="tile-content">
             <a class="flavor-info" title=<% data.name %> href="#">
-                <h2><%= data.name %></h2>
-                <p><%= data.description %></p>
-                <p><%= data.type %></p>
-                <ul class="ingredients">
-                    <%
-                        var ingredient;
-                        for(var i=0; i< data.ingredients.length; i++){
-                            ingredient = data.ingredients[i];
-                    %>
-                        <li><%= ingredient %></li>
+                <div class="flavor-info-img">
+                    <img src=<%= data.image %>>
+                </div>
+                <div class="flavor-info-bd">
+                    <h2 class="heading"><%= data.name %></h2>
+                    <p class="text-l"><%= data.description %></p>
+                    
+                    <% if(data.type === 'sorbet' || data.type === 'yogurt'){ %>
+                        <p class="text-l"><%= data.type %></p>
                     <% } %>
-                </ul>
+
+                    <h3 class="heading heading-fancy heading-s">Ingredients:</h3>
+                    <ul class="ingredients">
+                        <%
+                            var ingredient;
+                            for(var i=0; i< data.ingredients.length; i++){
+                                ingredient = data.ingredients[i];
+                        %>
+                            <li><%= ingredient %></li>
+                        <% } %>
+                    </ul>
+                </div>
             </a>
         </div>
     </div>

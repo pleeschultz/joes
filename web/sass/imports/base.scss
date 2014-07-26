@@ -22,6 +22,8 @@ img {
     height: auto;
 }
 
+.text-l { font-size: 2em; }
+
 /* ---------------------------------------------------------------------
  Color Pallete
 
@@ -33,6 +35,7 @@ img {
 ------------------------------------------------------------------------ */
 $dark : #211A11;
 $red: #D1322E;
+$light: #FBECA8;
 
 @mixin box-sizing($box){
     -webkit-box-sizing: $box;
