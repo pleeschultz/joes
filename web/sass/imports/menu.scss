@@ -16,11 +16,19 @@ h1 {
     margin: 0.5em 0;
 }
 
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
 h2 {
     font-size: 58px;
+    font-family:Pacifico;
     line-height: 1.4;
     font-weight: bold;
-    color: white;
+    color: #ffffff;
 }
 
 .flavor-subheading {

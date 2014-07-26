@@ -12,7 +12,6 @@
     min-height: 100%;
     border-left: 10px solid $dark;
     border-right: 10px solid $dark;
-    @include hardware-acceleration(translate3d(0,0,0));
 }
 
 .wrapper-inner {
@@ -36,7 +35,7 @@
     width: 50%;
     border: 2px solid white;
         margin: 0;
-
+    @include hardware-acceleration(translate3d(0,0,0));
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;

@@ -19,10 +19,19 @@ var Tiles = function(){
 
     function toggleSlide (e) {
         $('.flavor-description').removeClass('flavor-description-isActive');
+
+        /*
+            DELAY CSS OPACITY TRANSITION UNTIL AFTER TILES SLIDE
+        */
         setTimeout(function(){
                 $('.flavor-description').addClass('flavor-description-isActive');
             }
-            , 200);
+            , 200
+        );
+
+        /*
+            KEEP TRACK OF CURRENT TARGET
+        */
         var $this = $(e.currentTarget);
 
         /* 
@@ -97,6 +106,11 @@ var Tiles = function(){
     function closeSlide (){
        // CUZ PEOPLE JUST WANT TO CLOSE SHIT SOMETIMES
        // COMING SOON
+    };
+
+    function resize (){
+        // CUS PEOPLE LIKE TO RESIZE WINDOWS
+        // JK, JUST DEVELOPERS DO THAT KIND OF SHIT
     };
 
 }

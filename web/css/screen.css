@@ -118,11 +118,18 @@ h1 {
   font-size: 5em;
   margin: 0.5em 0; }
 
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format('woff'); }
+
 h2 {
   font-size: 58px;
+  font-family: Pacifico;
   line-height: 1.4;
   font-weight: bold;
-  color: white; }
+  color: #ffffff; }
 
 .flavor-subheading {
   color: #ADA79F;
@@ -175,12 +182,7 @@ h2 {
   margin: 0 auto;
   min-height: 100%;
   border-left: 10px solid #211A11;
-  border-right: 10px solid #211A11;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+  border-right: 10px solid #211A11; }
 
 .wrapper-inner {
   position: relative; }
@@ -203,6 +205,11 @@ h2 {
   width: 50%;
   border: 2px solid white;
   margin: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
