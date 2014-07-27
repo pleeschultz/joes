@@ -24,16 +24,22 @@
 
 .blocks {
     overflow: hidden;
-    border: 1px solid $light;
+    border: 2px solid $light;
     @include box-sizing(border-box);
+    opacity: 0;
+    @include transition(opacity 0.2s ease-out);
     background: $light;
     position: relative;
+}
+
+.blocks-isActive {
+    opacity: 1;
 }
 
 .blocks-cell {
     float: left;
     width: 50%;
-    border: 2px solid $light;
+    border: 4px solid $light;
         margin: 0;
     @include hardware-acceleration(translate3d(0,0,0));
     -webkit-transition: all 0.4s ease;
@@ -41,6 +47,7 @@
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    @include transition(margin-bottom 0.2s ease-out);
     @include box-sizing(border-box);
     @media screen and (min-width: 401px){
         width: 33.3333%;
@@ -68,6 +75,7 @@
     margin: 0;
     @include box-sizing(border-box);
     @include transition(margin-bottom 0.2s ease-out);
+    border-radius: 10px;
 }
 
 .tile-img {
@@ -106,7 +114,7 @@
 
 .logo {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     position: relative;
 }
 
@@ -123,7 +131,8 @@
     crop: rect(1px 1px 1px 1px);
     overflow: hidden;
     opacity: 0;
-    @include transition(opacity 0.3s ease-out);
+    @include box-sizing(border-box);
+    @include transition(opacity 0.2s ease-out);
 
 }
 
@@ -143,6 +152,7 @@
     margin: 0 auto 0.5em;
     padding: 2em 0;
     width: 250px;
+    @include box-sizing(border-box);
 }
 
 .flavor-info-img {

@@ -78,7 +78,7 @@ textarea {
 ------------------------------------------------------------------------ */
 html, body {
   height: 100%;
-  color: #004025;
+  color: whitesmoke;
   background: #f9da97;
   font: 12px 'Arial', 'Helvetica', sans-serif; }
 
@@ -201,18 +201,27 @@ header {
 ------------------------------------------------------------------------ */
 .blocks {
   overflow: hidden;
-  border: 1px solid #FBECA8;
+  border: 2px solid #FBECA8;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -ms-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
   background: #FBECA8;
   position: relative; }
+
+.blocks-isActive {
+  opacity: 1; }
 
 .blocks-cell {
   float: left;
   width: 50%;
-  border: 2px solid #FBECA8;
+  border: 4px solid #FBECA8;
   margin: 0;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -224,6 +233,11 @@ header {
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: margin-bottom 0.2s ease-out;
+  -moz-transition: margin-bottom 0.2s ease-out;
+  -ms-transition: margin-bottom 0.2s ease-out;
+  -o-transition: margin-bottom 0.2s ease-out;
+  transition: margin-bottom 0.2s ease-out;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -262,7 +276,8 @@ header {
   -moz-transition: margin-bottom 0.2s ease-out;
   -ms-transition: margin-bottom 0.2s ease-out;
   -o-transition: margin-bottom 0.2s ease-out;
-  transition: margin-bottom 0.2s ease-out; }
+  transition: margin-bottom 0.2s ease-out;
+  border-radius: 10px; }
 
 .tile-img {
   width: 100%;
@@ -295,7 +310,7 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   position: relative; }
 
 .tile-info-isActive {
@@ -310,11 +325,15 @@ header {
   crop: rect(1px 1px 1px 1px);
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease-out;
-  -moz-transition: opacity 0.3s ease-out;
-  -ms-transition: opacity 0.3s ease-out;
-  -o-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out; }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -ms-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out; }
 
 .flavor-description-isActive {
   background: #D1322E;
@@ -329,7 +348,11 @@ header {
 .flavor-info {
   margin: 0 auto 0.5em;
   padding: 2em 0;
-  width: 250px; }
+  width: 250px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .flavor-info-img {
   display: none; }

@@ -1,11 +1,22 @@
 var Tiles = function(){
+    /*
+        Fade in the tiles to allow image content to load
+    */
+    setTimeout(function(){
+        $('.blocks').addClass('blocks-isActive');
+    },
+        100
+    );
 
+    /*
+        Setup and enable handlers
+    */
     setupHandlers();
     enable();
 
-    this.$tileMatrix = $('.js-tiles');
-    this.$tiles = $('.js-tiles-trigger');
-    this.$window = $(window);
+    // this.$tileMatrix = $('.js-tiles');
+    // this.$tiles = $('.js-tiles-trigger');
+    // this.$window = $(window);
 
     function setupHandlers (){
         this.eventHandler = $.proxy(toggleSlide, this);
@@ -18,7 +29,6 @@ var Tiles = function(){
 
     function toggleSlide (e) {
         $('.flavor-description').removeClass('flavor-description-isActive');
-
         /*
             DELAY CSS OPACITY TRANSITION UNTIL AFTER TILES SLIDE
         */
@@ -81,7 +91,7 @@ var Tiles = function(){
         currentRow = Math.ceil(prevLi/liPerRow);
 
         // OFFSET
-        var offset = currentRow * tileHeight;
+        var offset = (currentRow * tileHeight) + 1;
 
         // APPLY OFFSET
         $('.flavor-description').css('top', offset);
