@@ -124,25 +124,31 @@ header {
   src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format('woff'); }
 
 .heading {
-  font-size: 48px;
+  font-size: 3em;
   line-height: 1;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 30px; }
+  @media screen and (min-width: 401px) {
+    .heading {
+      font-size: 4em; } }
 
 .heading-s {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 1em; }
+  @media screen and (min-width: 401px) {
+    .heading-s {
+      font-size: 2em; } }
 
 .heading-fancy {
-  font-family: Pacifico; }
+  font-family: Pacifico, Georgia, serif; }
 
 .text-l {
   font-size: 2em; }
 
 .flavor-subheading {
   color: #ADA79F;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 2.7em;
   font-weight: 600;
   margin: 0;
@@ -287,16 +293,28 @@ header {
   -webkit-box-shadow: 0 0 1em #333333;
   box-shadow: 0 0 1em #333333; }
 
-.tile-title_noNamePlate {
-  width: 100%;
+.tile-noImg {
   position: absolute;
-  top: 50%;
-  line-height: 0;
-  font-size: 1em;
+  top: 0;
+  left: 0;
   text-align: center;
-  color: #fff7ec; }
+  vertical-align: middle;
+  width: 100%;
+  height: 100%; }
+  .tile-noImg p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 2em;
+    font-family: Pacifico, Georgia, serif; }
+  .tile-noImg:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+    /* Adjusts for spacing */ }
 
-/* TODO - use better screen-reader only convention */
 .tile-content {
   position: absolute;
   width: 1px;
@@ -354,10 +372,10 @@ header {
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
-.flavor-info-img {
+.flavor-info-media {
   display: none; }
   @media screen and (min-width: 401px) {
-    .flavor-info-img {
+    .flavor-info-media {
       display: block;
       width: 33.3333%;
       float: left;
@@ -369,7 +387,7 @@ header {
       -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
       box-sizing: border-box; }
-      .flavor-info-img img {
+      .flavor-info-media p, .flavor-info-media img {
         width: 100%;
         border-radius: 10px; } }
 
@@ -392,11 +410,13 @@ header {
       float: left;
       width: 66%; } }
 
+@media screen and (min-width: 401px) {
+  .flavor-info-bd-full {
+    float: none;
+    width: 100%; } }
+
 .flavor-info p:last-child {
   margin-bottom: 0; }
-
-.js-tiles-feature .flavor-info {
-  display: none; }
 
 /* ---------------------------------------------------------------------
  Feature - Theme

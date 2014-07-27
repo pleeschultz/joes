@@ -88,17 +88,30 @@
     box-shadow: 0 0 1em #333333;
 }
 
-.tile-title_noNamePlate {
-    width: 100%;
+.tile-noImg {
     position: absolute;
-    top: 50%;
-    line-height: 0;
-    font-size: 1em;
+    top: 0;
+    left: 0;
     text-align: center;
-    color: rgb(255, 247, 236);
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        font-size: 2em;
+        font-family: Pacifico, Georgia, serif;
+    }
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%; 
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+    }
 }
 
-/* TODO - use better screen-reader only convention */
 .tile-content {
     position: absolute;
     width: 1px;
@@ -155,7 +168,7 @@
     @include box-sizing(border-box);
 }
 
-.flavor-info-img {
+.flavor-info-media {
     display: none;
     @media screen and (min-width: 401px){
         display: block;
@@ -166,9 +179,12 @@
         background: black;
         background: rgba(0,0,0,0.6);
         @include box-sizing(border-box);
-        img {
+        p, img {
             width: 100%;
             border-radius: 10px;
+        }
+        p {
+
         }
     }
 }
@@ -191,12 +207,15 @@
     }
 }
 
-.flavor-info p:last-child {
-    margin-bottom: 0;
+.flavor-info-bd-full {
+    @media screen and (min-width: 401px){
+        float: none;
+        width: 100%;
+    }
 }
 
-.js-tiles-feature .flavor-info {
-    display: none;
+.flavor-info p:last-child {
+    margin-bottom: 0;
 }
 
 /* ---------------------------------------------------------------------

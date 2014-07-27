@@ -3,15 +3,22 @@
         <img class="tile-img" src=<%= data.image %> alt="" />
 
         <% if(!data.hasNameplate){ %>
-            <p class="tile-title_noNamePlate"><%= data.name %></p>
+            <div class="tile-noImg">
+                <p><%= data.name %></p>
+            </div>
         <% } %>
 
         <div class="tile-content">
             <a class="flavor-info" title=<% data.name %> href="#">
-                <div class="flavor-info-img">
-                    <img src=<%= data.image %> alt="">
-                </div>
-                <div class="flavor-info-bd">
+                <% if(data.hasNameplate){ %>
+                    <div class="flavor-info-media">
+                        <img src=<%= data.image %> alt="">
+                    </div>
+                    <div class="flavor-info-bd">
+                <% } %>
+                <% if(!data.hasNameplate){ %>
+                    <div class="flavor-info-bd flavor-info-bd-full">
+                <% } %>
                     <h2 class="heading"><%= data.name %></h2>
                     <p class="text-l"><%= data.description %></p>
                     
