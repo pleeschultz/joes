@@ -111,7 +111,7 @@ img {
  Menu
 ------------------------------------------------------------------------ */
 header {
-  padding: 30px 0 30px;
+  padding: 30px 0 0px;
   color: #231c13;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -157,8 +157,9 @@ header {
 
 .menu {
   width: 100%;
-  margin-top: 40px;
-  display: none; }
+  margin-top: 40px; }
+  .menu.admin li {
+    width: 50%; }
 
 .menu ul {
   margin: 0 auto;
@@ -213,17 +214,8 @@ header {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s ease-out;
-  -moz-transition: opacity 0.2s ease-out;
-  -ms-transition: opacity 0.2s ease-out;
-  -o-transition: opacity 0.2s ease-out;
-  transition: opacity 0.2s ease-out;
   background: #FBECA8;
   position: relative; }
-
-.blocks-isActive {
-  opacity: 1; }
 
 .blocks-cell {
   float: left;
@@ -285,6 +277,13 @@ header {
   -o-transition: margin-bottom 0.2s ease-out;
   transition: margin-bottom 0.2s ease-out;
   border-radius: 10px; }
+  .tile.admin {
+    color: white;
+    text-align: center;
+    height: 80px;
+    font-size: 1.2em; }
+    .tile.admin.active {
+      background-color: green; }
 
 .tile-img {
   width: 100%;

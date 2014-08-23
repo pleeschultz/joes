@@ -15,15 +15,15 @@
     <div class="wrapper">
         <header>
             <h1 class="screen-reader">Sebastian Joe's Ice Cream</h1>
-            
+
             <img class="logo" src="images/sebjoe-logo.png" alt="" height="580" width="294">
             <h2 class="heading heading-fancy">Flavor Board</h2>
             <!-- <p class="flavor-subheading">We make it fresh daily. One batch at a time.</p> -->
             <div class="menu">
                 <ul>
-                    <li><a href="#">Franklin Ave</a></li>
-                    <li><a href="#" class="active">All Flavors</a></li>
-                    <li><a href="#">Linden Hills</a></li>
+                    <li><a data-location="franklin" href="#franklin">Franklin Ave</a></li>
+                    <li><a data-location="all-flavors" href="#all-flavors">All Flavors</a></li>
+                    <li><a data-location="linden" href="#linden">Linden Hills</a></li>
                 </ul>
             </div>
         </header>
@@ -32,29 +32,15 @@
 
             </ul>
             <div data-view="flavor-detail-container-view" class="flavor-description flavor-description-isInactive">
+
             </div>
         </div>
     </div>
 
 
-<!--
-    <script type="text/html">
-        <li class="blocks-cell js-tiles-trigger">
-            <div class="tile">
-                <img class="tile-img" src="" alt="" />
-                <div class="tile-content">
-                    <div class="flavor-info">
-                        <h2>flavor name</h2>
-                        <p>flavor details</p>
-                    </div>
-                </div>
-            </div>
-        </li>
+    <script>
+        var __mode = 0;
     </script>
--->
-
-
-    <!-- js -->
     <script data-main="js/index" src="js/libs/require.js"></script>
 
 </body>

@@ -22,13 +22,11 @@ define([
 
 			_.each(data, function(flavor){
 				if(!flavor.photographed && flavor.type == 'ice-cream'){
-					console.log(flavor.name);
+					//console.log(flavor.name);
 					missing.push(flavor.name);
 				}
 			})
-			console.log(data.length);
-			console.log(missing.length + ' missing');
-			
+
 			return data;
 		}
 	});
