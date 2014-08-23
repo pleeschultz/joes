@@ -1,0 +1,26 @@
+{
+    "appDir": "web/js",
+    "baseUrl": "./",
+    "dir": "build/web/js",
+    "paths": {
+        "jquery": "libs/jquery-1.11.0.min",
+        "underscore": "libs/underscore-min",
+        "backbone": "libs/backbone-min",
+        "tween": "libs/non-amd-tween-loader",
+        "hammer": "libs/hammer.min",
+        "text": "libs/text"
+    },
+    "shim": {
+        "tween": {
+            "deps": [
+                "js/libs/TweenMax.min.js"
+            ]
+        }
+    },
+    "modules": [
+        {
+            "name": "index",
+            "include": ["app/app.controller"]
+        }
+    ]
+}

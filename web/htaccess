@@ -1,0 +1,7 @@
+AuthUserFile /Users/pleeschultz/MAMPROOT/joes/.htpasswd
+
+AuthName "Admin"
+AuthType Basic
+<Files "admin.html">
+    require user sbjoe
+</Files>

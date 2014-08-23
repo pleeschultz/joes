@@ -1,5 +1,6 @@
 *.DS_Store
 
+build.tar.gz
 node_modules/
 web/css/screen.scss
 build/

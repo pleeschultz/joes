@@ -4,7 +4,7 @@
 
 header {
     // background: #37342F;
-    padding: 30px 0 0;
+    padding: 30px 0 30px;
     color: rgb(35, 28, 19);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -23,7 +23,7 @@ header {
     line-height: 1;
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     @media screen and (min-width: 401px){
         font-size: 4em;
     }
@@ -55,9 +55,10 @@ header {
     letter-spacing: 0px;
 }
 
-.menu { 
+.menu {
     width: 100%;
     margin-top: 40px;
+    display: none;
 }
 
 .menu ul {
@@ -66,7 +67,7 @@ header {
 }
 
 .menu li {
-    float: left; 
+    float: left;
     width: 33.33338%;
     display: table;
     @include box-sizing(border-box);
