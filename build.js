@@ -15,7 +15,7 @@
     shim: {
         tween: {
             deps: [
-                'js/libs/TweenMax.min.js'
+                'libs/TweenMax.min.js'
             ]
         }
     },

@@ -12,9 +12,9 @@ $data["flavorIds"] =  array_merge(array_diff($data["flavorIds"], array($removeId
 
 $fh = fopen("../data/" . $store . ".json", 'w')
       or die("Error opening output file");
-fwrite($fh, json_encode($data, JSON_UNESCAPED_UNICODE));
+fwrite($fh, json_encode($data, 128));
 fclose($fh);
 
-echo json_encode($data, JSON_UNESCAPED_UNICODE);
+echo json_encode($data, 128);
 
 ?>
