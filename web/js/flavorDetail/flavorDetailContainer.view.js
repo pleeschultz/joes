@@ -22,7 +22,6 @@ define([
 			var ulWidth = $flavorsView.width();
 			var liWidth = $flavorViews.width();
 			var liPerRow = Math.floor(ulWidth/liWidth);
-			var totalRows = Math.ceil(totalFlavorViews/liPerRow);
 			var findEnd = Math.ceil(flavorIndex/liPerRow) * liPerRow -1;
 			var lastFlavor = $('.js-tiles-trigger:last-of-type').index();
 			var liModulo = Math.ceil(totalFlavorViews%liPerRow);
