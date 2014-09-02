@@ -140,7 +140,10 @@
 }
 
 .tile-info-isActive {
-    margin-bottom: 400px;
+    margin-bottom: 500px;
+    @media screen and (min-width: 401px){
+        margin-bottom: 400px;
+    }
 }
 
 .flavor-description {
@@ -161,8 +164,11 @@
     background: $red;
     width: 100%;
     text-align: center;
-    height: 400px;
+    height: 500px;
     opacity: 1;
+    @media screen and (min-width: 401px){
+        height: 400px;
+    }
 }
 
 /* ---------------------------------------------------------------------
