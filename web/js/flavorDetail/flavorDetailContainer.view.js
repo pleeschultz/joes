@@ -17,21 +17,46 @@ define([
 
 			var $flavorsView = $('.js-tiles');
 			var $flavorViews = $flavorsView.find('.js-tiles-trigger');
-
+			var totalFlavorViews = $flavorViews.length;
 			var flavorIndex = $flavorViews.index(flavorView.$el) + 1;
-
 			var ulWidth = $flavorsView.width();
 			var liWidth = $flavorViews.width();
 			var liPerRow = Math.floor(ulWidth/liWidth);
-
+			var totalRows = Math.ceil(totalFlavorViews/liPerRow);
 			var findEnd = Math.ceil(flavorIndex/liPerRow) * liPerRow -1;
+			var lastFlavor = $('.js-tiles-trigger:last-of-type').index();
+			var liModulo = Math.ceil(totalFlavorViews%liPerRow);
+
+			var hasOrphan = false;
+			var isOrphan = false;
+			
+			// determine if there is a single flavor in the last row
+			if (liModulo === 1){
+				var hasOrphan = true;
+			} 
+			
+			// determine if the last row is not a full row
+			if(findEnd > totalFlavorViews) {
+				var findEnd = lastFlavor;
+			} 
+			
 			var tileHeight = $flavorViews[0].offsetHeight;
 
 			$flavorViews.removeClass('tile-info-isActive');
 			$flavorViews.eq(findEnd).addClass('tile-info-isActive');
 
 			var prevLi = $('.tile-info-isActive').prevAll('.js-tiles-trigger').length;
-			var currentRow = Math.ceil(prevLi/liPerRow);
+
+			if($('.tile-info-isActive').is('.js-tiles-trigger:last-of-type')){
+				var isOrphan = true;
+			}
+
+			if (hasOrphan && isOrphan){
+				var currentRow = Math.ceil(prevLi/liPerRow + 1);	
+			} else {
+				var currentRow = Math.ceil(prevLi/liPerRow);
+			}
+
 			var yOffset = (currentRow * tileHeight) + 1;
 
 			Tween.set(this.$el, { y: yOffset });
