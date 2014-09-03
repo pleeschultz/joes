@@ -303,12 +303,12 @@ header {
   height: 100%; }
   .tile-noImg p {
     display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-        font-size: 1.8em;
-        font-family: Pacifico, Georgia, serif;
-        max-width: 130px;
-        line-height: 1.2; }
+    vertical-align: middle;
+    margin: 0;
+    font-size: 1.8em;
+    font-family: Pacifico, Georgia, serif;
+    max-width: 130px;
+    line-height: 1.2; }
   .tile-noImg:before {
     content: '';
     display: inline-block;
@@ -334,7 +334,10 @@ header {
   position: relative; }
 
 .tile-info-isActive {
-  margin-bottom: 400px; }
+  margin-bottom: 500px; }
+  @media screen and (min-width: 401px) {
+    .tile-info-isActive {
+      margin-bottom: 400px; } }
 
 .flavor-description {
   position: absolute;
@@ -359,8 +362,11 @@ header {
   background: #D1322E;
   width: 100%;
   text-align: center;
-  height: 400px;
+  height: 500px;
   opacity: 1; }
+  @media screen and (min-width: 401px) {
+    .flavor-description-isActive {
+      height: 400px; } }
 
 /* ---------------------------------------------------------------------
  Flavor

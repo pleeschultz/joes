@@ -35,7 +35,7 @@ define([
 			} 
 			
 			// determine if the last row is not a full row
-			if(findEnd > totalFlavorViews) {
+			if (findEnd > totalFlavorViews) {
 				var findEnd = lastFlavor;
 			} 
 			
@@ -46,7 +46,7 @@ define([
 
 			var prevLi = $('.tile-info-isActive').prevAll('.js-tiles-trigger').length;
 
-			if($('.tile-info-isActive').is('.js-tiles-trigger:last-of-type')){
+			if ($('.tile-info-isActive').is('.js-tiles-trigger:last-of-type')){
 				var isOrphan = true;
 			}
 
