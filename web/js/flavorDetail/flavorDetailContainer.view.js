@@ -35,7 +35,7 @@ define([
 			} 
 			
 			// determine if the last row is not a full row
-			if (findEnd > totalFlavorViews) {
+			if (findEnd >= totalFlavorViews) {
 				var findEnd = lastFlavor;
 			} 
 			
@@ -52,12 +52,15 @@ define([
 
 			if (hasOrphan && isOrphan){
 				var currentRow = Math.ceil(prevLi/liPerRow + 1);	
+				console.log('this has and is an orphan');
+
 			} else {
 				var currentRow = Math.ceil(prevLi/liPerRow);
 			}
 
-			var yOffset = (currentRow * tileHeight) + 1;
 
+			var yOffset = (currentRow * tileHeight) + 1;
+			
 			Tween.set(this.$el, { y: yOffset });
 
 			Tween.delayedCall(.2, function(){
