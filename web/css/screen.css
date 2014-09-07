@@ -385,6 +385,9 @@ header {
   @media screen and (min-width: 401px) {
     .flavor-info-media {
       display: block;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       width: 33.3333%;
       float: left;
       height: 100%;
@@ -400,6 +403,10 @@ header {
         border-radius: 10px; } }
 
 .flavor-info-bd {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
   padding: 30px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

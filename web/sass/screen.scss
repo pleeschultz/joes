@@ -186,6 +186,9 @@
     display: none;
     @media screen and (min-width: 401px){
         display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         width: 33.3333%;
         float: left;
         height: 100%;
@@ -204,6 +207,10 @@
 }
 
 .flavor-info-bd {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
     padding: 30px;
     @include box-sizing(border-box);
     li {
