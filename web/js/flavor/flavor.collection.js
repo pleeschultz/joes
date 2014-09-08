@@ -13,6 +13,10 @@ define([
 		model: FlavorModel,
 		url: 'data/flavors.json',
 		initialize: function(){
+
+			if(Backbone.AppConfig.ADMIN)
+				this.url = '../data/flavors.json';
+
 			this.defferedFetch = this.fetch({ merge: true });
 		},
 		parse: function(data){

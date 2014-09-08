@@ -118,7 +118,7 @@ define([
 
 
 				var flavorsStoreModel = new FlavorsStoreModel();
-				flavorsStoreModel.url = 'data/' + store + '.json';
+				flavorsStoreModel.url = '../data/' + store + '.json';
 
 				flavorsStoreModel.on('sync', function(){
 					var flavorIds = flavorsStoreModel.get('flavorIds');

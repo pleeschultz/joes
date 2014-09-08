@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Admin Area"
+AuthUserFile /home/191172/.htpasswd
+AuthGroupFile /home/191172/.htgroup
+Require group employees

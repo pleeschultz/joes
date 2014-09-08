@@ -28,7 +28,7 @@ define([
 		activate: function(){
 			console.log('activate', this.model.get('currentStore'),  this.model.id);
 
-			$.post('admin/add-flavor.php', {
+			$.post('../api/add-flavor.php', {
 				store: this.model.get('currentStore'),
 				flavorId: this.model.id
 			}).done(function(data) {
@@ -40,7 +40,7 @@ define([
 		deactivate: function(){
 			console.log('deactivate', this.model.get('currentStore'),  this.model.id);
 
-			$.post('admin/remove-flavor.php', {
+			$.post('../api/remove-flavor.php', {
 				store: this.model.get('currentStore'),
 				flavorId: this.model.id
 			}).done(function(data) {

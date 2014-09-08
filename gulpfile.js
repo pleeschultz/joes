@@ -7,6 +7,7 @@ var clean = require('gulp-clean');
 var uglify = require('gulp-uglify');
 var exec = require('gulp-exec');
 var rimraf = require('gulp-rimraf');
+var rename = require("gulp-rename");
 
 gulp.task('default', ['sass'], function() {
 	gulp.watch('./web/sass/**', ['sass']);
@@ -52,13 +53,53 @@ gulp.task('require-js-clean', ['require-js-build'], function(){
 		.pipe(clean({ force: true }));
 });
 
-gulp.task('deploy-test', ['require-js-clean'], function(){
+
+gulp.task('admin-copy', ['require-js-clean'], function(){
+	return gulp.src(['./build/web/**'])
+		.pipe(gulp.dest('./build/web/admin'));
+});
+
+gulp.task('admin-clean', ['admin-copy'], function(){
+	return gulp.src([
+			'./build/web/admin/api',
+			'./build/web/admin/archive',
+			'./build/web/admin/data',
+			'./build/web/admin/images',
+			'./build/web/admin/404.html',
+			'./build/web/admin/robots.txt',
+			'./build/web/admin/index.html'
+		], { read: false })
+		.pipe(clean({ force: true }));
+});
+
+gulp.task('admin-index-rename', ['admin-clean'], function(){
+	return gulp.src('./build/web/admin/admin.html')
+		.pipe(rename('./build/web/admin/index.html'))
+		.pipe(gulp.dest('./'));
+});
+
+gulp.task('admin-access', ['admin-index-rename'], function(){
+	return gulp.src('./build/web/admin/adminhtaccess')
+		.pipe(rename('./build/web/admin/.htaccess'))
+		.pipe(gulp.dest('./'));
+});
+
+gulp.task('admin-clean2', ['admin-access'], function(){
+	return gulp.src([
+			'./build/web/admin.html',
+			'./build/web/admin/admin.html',
+			'./build/web/adminhtaccess'
+		], { read: false })
+		.pipe(clean({ force: true }));
+});
+
+gulp.task('deploy-test', ['admin-clean2'], function(){
 	return gulp.src(['./build/web/js/*'])
 		.pipe(uglify())
 		.pipe(gulp.dest('build/web/js'));
 });
 
-gulp.task('build-compress', ['require-js-clean'], function(){
+gulp.task('build-compress', ['admin-clean2'], function(){
 
     var src = ['./build/**', './build/.*'];
 
@@ -81,6 +122,7 @@ gulp.task('upload', ['build-compress'], function(){
         'tar -xvzf build.tar.gz',
     	'rm -rf ../html',
     	'mv -f build/web/ ../html',
+		'mv ../html/admin/adminhtaccess ../html/admin/.htaccess',
     //     'rm -rf ../node-services',
     //     'mv -f build/node-services/ ../',
     //     'mv -f build/app.js ../',
